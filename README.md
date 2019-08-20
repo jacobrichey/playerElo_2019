@@ -6,7 +6,7 @@
 Consider the following comparison between Freddie Freeman (29) and Carlos Santana (33). Both players were starters for the 2019 All-Star teams of their respective leagues and are enjoying breakout seasons, beyond their usual high production level, with nearly identical statistics across the board.  
 
 | PA | wOBA | xwOBA | wRC+ |
-| -- | ---- | ----- | ---- |
+| :-: | :-: | :-: | :-: |
 | Freeman, 1B | 486 | 0.395 | 0.393 | 144 |
 | Santana, 1B | 452 | 0.383 | 0.366 | 137 |
 
@@ -19,26 +19,23 @@ Conceived out of inspiration from Arpad Elo’s rating system for zero-sum games
 The following run expectancy matrix presents the expected runs scored for the remainder of the inning, given the current run environment, baserunners, and number of outs. Data is sourced from all at-bats from 2016-2018, and expected run values are rounded to the second decimal place. For example, a grand slam hit with one out would shift the run expectancy from 1.54 to 0.27 and score four runs, so the run value of the play would be 2.73. 
 
 | 1B | 2B | 3B | 0 outs | 1 out | 2 outs |
-| -- | -- | -- | ------ | ----- | ------ |
+| :-: | :-: | :-: | :-: | :-: | :-: |
 | -- | -- | -- | 0.51 | 0.27 | 0.11 |
 | 1B | -- | -- | 0.88 | 0.52 | 0.22 |
-
-
---	2B	--	1.15	0.69	0.32
---	--	3B	1.39	0.97	0.36
-1B	2B	--	1.45	0.93	0.44
-1B	--	3B	1.77	1.20	0.48
---	2B	3B	1.97	1.40	0.56
-1B	2B	3B	2.21	1.54	0.75
+| -- | 2B | -- | 1.15 | 0.69 | 0.32 |
+| -- | -- | 3B | 1.39 | 0.97 | 0.36 |
+| 1B | 2B | -- | 1.45 | 0.93 | 0.44 |
+| 1B | -- | 3B | 1.77 | 1.20 | 0.48 |
+| -- | 2B | 3B | 1.97 | 1.40 | 0.56 |
+| 1B | 2B | 3B | 2.21 | 1.54 | 0.75 |
 
 The model begins with a calibration year of 2018, and for 2019, players begin with their previous seasons’ ending playerElo, regressed to the mean slightly. If a player did not have a single plate appearance or batter faced pitching in 2018, for example Vladimir Guerrero Jr. or Chris Paddack, they are assigned a baseline playerElo of 1000 (calibration year of 2018 began every player at 1000). For every at-bat, given the current base-out state, an expected run value for both the batter and pitcher is calculated, based on quadratic formulas of historic performance of players of that caliber in the given situation. The dependency of the Elo formula on the base-out state ensures the model is context-dependent, meaning it incorporates the fact that a bases-loaded double is far more valuable than a double with bases empty, however, it also takes into account that runs were more likely to be scored in the former situation compared to the latter. It is important to note playerElo is a raw batting statistic and does not evaluate overall production, meaning stolen bases are not factored in to the ranking system. Additionally, while the model does not take into account defense, it also does not count stolen bases or passed balls negatively against a pitcher, and likewise does not count changes in game states due to wild pitches positively for a batter.
 Once an expected run value is synthesized from the current state and the playerElo of the batter and the pitcher, park factor and home field advantage adjustments (if applicable) are made, and the expected run value of the play is then compared to the true run value outcome. The playerElo of both the batter and pitcher are then updated accordingly, dependent on the difference between the true run value and the expected run value. For example, if an excellent pitcher strikes out a mediocre batter, the batter will not lose much Elo, and the pitcher will not gain much Elo. Likewise, if a below-average batter does extremely well against a top pitcher, there will be a far greater change in the Elo of both players. Errors are also taken into account and will prevent a positive run value from counting against a pitcher or positively for a batter. 
 
 
-
-
-Analysis
-Elo Rankings
+## Analysis
+###### Elo Rankings
+![2019, playerElo Top 25](/iCloud Drive⁩/⁨Desktop⁩/Jacob⁩/Personal R⁩/⁨playerElo_App/elo19TopPlayers.png)
 It is interesting to note Charlie Blackmon and Nolan Arenado do particularly well in the model, even with park factor adjustments. This is can be attributed to the difficulty of schedule of the Rockies, who regularly face the powerhouse pitching of the LA Dodgers, and the respectable competition of the Diamondbacks, Padres, and Giants. Blackmon and Arenado have faced 52 and 51 top fifteen pitchers (rated by FIP) respectively thus-far, numbers which are in the top seven among all batters. Quality of contact does leave room to be desired for Blackmon, however, playerElo does not incorporate statistics like exit velocity and launch angle in its calculations, and thus the model is a better reflection of on-field performance than underlying swing metrics. Likewise, Cody Bellinger, while he still ranks high, is knocked down a few rungs to 8th overall among batters due to ease of competition (only 26 top pitchers faced).
 Pitching wise, the breakout performances of Ryu, Gallegos, and Morton are all captured and supported by the playerElo model. Scherzer, Hader, and Yates’ continued success looks to be sustainable. Mike Minor ranks particularly high (23rd among SPs) after seeing success against the high-powered offense of the Astros (8th in runs scored), Angels (9th), Mariners (11th), and Athletics (12th), and would have been an impact pitcher if dealt at the deadline.
 In contrast, playerElo has little faith in Trevor Bauer, one of the most discussed pitchers at the deadline, especially in the impact he will have on the Reds. Bauer is ranked 83rd among SPs with more than 100 batters faced, with a currentElo of 990.5 after beginning the season with a preseasonElo of 1111.30. He has struggled mightily against a relatively easy division of the AL Central (apart from the Twins), regularly facing the Royals (24th in runs scored), White Sox (26th), and Tigers (27th), posting an xFIP of 4.28. However, the Reds play in a division only slightly tougher offensively than the Indians and given the recent trend of quality starts from Bauer (despite his most recent, which included an impressive temper tantrum), it’s entirely possible Bauer does indeed turn things around for the second half. We can visualize Bauer’s season long playerElo trend within the context of the league with the following graphic. Displayed below is the playerElo trends of the entire MLB for 2019, with specific batters and pitchers highlighted. The bold line on both graphs denotes the average playerElo. 
