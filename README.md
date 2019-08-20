@@ -17,10 +17,13 @@ However, I argue there is an underlying statistic that makes Santana’s success
 Conceived out of inspiration from Arpad Elo’s rating system for zero-sum games like chess, and FiveThirtyEight’s use of an Elo modeling scheme for MLB team ratings and season-wide predictions, playerElo treats all at-bats as events and maintains a running power ranking of all MLB batters and pitchers. The system uses expected run values over the twenty-four possible base-out states. Additionally, run values are calculated for each at-bat event by subtracting the run expectancy of the beginning state from the ending state, and adding the runs scored.
 `Run Value of Play = RE End State - RE Beginning State + Runs Scored`
 The following run expectancy matrix presents the expected runs scored for the remainder of the inning, given the current run environment, baserunners, and number of outs. Data is sourced from all at-bats from 2016-2018, and expected run values are rounded to the second decimal place. For example, a grand slam hit with one out would shift the run expectancy from 1.54 to 0.27 and score four runs, so the run value of the play would be 2.73. 
+
 | 1B | 2B | 3B | 0 outs | 1 out | 2 outs |
 | -- | -- | -- | ------ | ----- | ------ |
 | -- | -- | -- | 0.51 | 0.27 | 0.11 |
-1B	--	--	0.88	0.52	0.22
+| 1B | -- | -- | 0.88 | 0.52 | 0.22 |
+
+
 --	2B	--	1.15	0.69	0.32
 --	--	3B	1.39	0.97	0.36
 1B	2B	--	1.45	0.93	0.44
