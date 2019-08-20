@@ -442,21 +442,24 @@ server <- function(input, output) {
     if (input$team != "All") {
       data <- data[data$Team == input$team, ]
     }
-    data <- data[data$PA > as.numeric(input$pa), ]
+    data <- data[data$PA > as.numeric(input$pa), ] 
+
   }, options = list(lengthChange = FALSE, pageLength = 100,
-                    columnDefs = list(list(className = 'dt-center', targets = 3:10)))))
+                    columnDefs = list(list(className = 'dt-center', targets = 3:10)))) %>%
+    formatRound(c("EV", "HH%"), 1) %>%
+    formatRound(c("wOBA", "xwOBA"), 3))
   
   output$teamElo <-
-    renderDT(
-    eloTeam19,
-      options = list(
+    renderDT({
+      datatable(eloTeam19, options = list(
         lengthChange = FALSE,
         pageLength = 30,
         columnDefs = list(list(
           className = 'dt-center', targets = 2:10
         ))
-      )
-    )
+      )) %>%
+        formatRound(c("Pythagorean WPct", "WPct"), 3)
+    })
 
   output$graph <- renderPlot({
     player_highlight <- input$plySelect
