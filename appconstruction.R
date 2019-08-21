@@ -2,11 +2,12 @@
 ## playerElo App
 ## August 2019
 
-require(shiny)
 require(tidyverse)
+require(data.table)
 require(DT)
 require(baseballr)
-setwd("~/Desktop/Jacob/Personal R/playerElo_App")
+require(shiny)
+setwd("~/Desktop/Jacob/Personal_R/playerElo")
 
 # Load previously calculated park factors, calculated playerElos for 2018,
 # and a matrix of quadratic coefficients based on game state to be used in playerElo calculations
@@ -29,13 +30,15 @@ pbp.compile <- function(data) {
                    "Runs_OnPlay", "Outs_OnPlay", "SB", "CS", "FC", "PB", "WP", "Description")
   # remove all plays in which there is not a batted ball event
   data <- data[Play_Type != '' & Play_Type != 'CATCHER INTERFERENCE' & Play_Type != 'FAN INTERFERENCE']
-  # correct two instances of inaccurate scoring
-  data$Play_Type[7558] <- 'FIELD ERROR'
-  data$Description[7558] <- 'Eric Stamets attempted sac bunt, reached on error. Naquin to 3B'
-  data$Outs_OnPlay[7558] <- ''
-  data$Play_Type[7731] <- ''
-  data$Description[7731] <- 'Andrew Benintendi attempted sac bunt, reached on FC. Betts to 2B. Benintendi to 1B'
-  data$Outs_OnPlay[7731] <- ''
+  # correct instances of inaccurate scoring
+  data$Outs_OnPlay[1195] <- '2'
+  data$Play_Type[1961] <- 'FIELD ERROR'
+  data$Outs_OnPlay[1961] <- ''
+  data$Play_Type[7307] <- 'FIELD ERROR'
+  data$Outs_OnPlay[7307] <- ''
+  data$Play_Type[7475] <- 'FIELD ERROR'
+  data$Outs_OnPlay[7475] <- ''
+  data$Outs_OnPlay[9467] <- '2'
   return(data)
 }
 # compute run value of every play (inspired by work of Jim Albert and Max Marchi)
@@ -289,16 +292,15 @@ p19EloX <- p19EloX %>%
   mutate(Trend = replace_na(Trend, 1000))
 p19EloDisplay <- p19EloX %>%
   unite("Name", First_Name, Last_Name, sep = " ") %>%
-  mutate(Trend = round(playerElo - Trend, 0),
-         Trend = ifelse(Trend < 0, as.character(Trend), paste0("+", Trend))) %>%
+  mutate(Trend = round(playerElo - Trend, 0)) %>%
   select(Name, Team, Position, PA, EV, 
          "HH%", wOBA, xwOBA, Trend, playerElo)
 
 # load team records from baseballr package
-al_records <- data.frame(matrix(unlist(standings_on_date_bref(date = "2019-08-15", division = "AL Overall")), 
+al_records <- data.frame(matrix(unlist(standings_on_date_bref(date = "2019-08-18", division = "AL Overall")), 
                                 nrow=15), stringsAsFactors=FALSE) %>%
   select("Team" = 1, "W" = 2, "L" = 3, "WPct" = 4, "pythWPct" = 8)
-nl_records <- data.frame(matrix(unlist(standings_on_date_bref(date = "2019-08-15", division = "NL Overall")), 
+nl_records <- data.frame(matrix(unlist(standings_on_date_bref(date = "2019-08-18", division = "NL Overall")), 
                                 nrow=15), stringsAsFactors=FALSE) %>%
   select("Team" = 1, "W" = 2, "L" = 3, "WPct" = 4, "pythWPct" = 8)
 team_records <- rbind(al_records, nl_records) %>%
@@ -374,8 +376,8 @@ allPlayerEloX <- allPlayerElo %>%
   ungroup() %>%
   mutate(isPitcher = factor(isPitcher, levels = c(T, F),
                             labels = c("Pitcher", "Batter"))) %>%
-  distinct(playerID, Name, .keep_all = TRUE) %>%
-  select(playerID, PA, playerElo, Name)
+  select(playerID, PA, playerElo, Name) %>%
+  filter(Name != 'NA NA')
 
 # write ui for shiny app
 ui <- fluidPage(
@@ -385,7 +387,7 @@ ui <- fluidPage(
   tabsetPanel(
     tabPanel("playerElo Ranks", 
              tags$em(tags$h6("Column Header Notes: EV = Exit Velocity,
-                             HH% = Hard Hit Percentage, Trend = playerElo 50 PA ago")),
+                             HH% = Hard Hit Percentage, Trend = Difference of playerElo 50 PA ago")),
              fluidRow(
                column(4,
                       selectInput("pos",
@@ -412,16 +414,13 @@ ui <- fluidPage(
                                   c(1, 25, 50, 100, 200, 300, 400, 500),
                                   100)
                )
-             ),
-             # Create a new row for the table.
-             DT::dataTableOutput("playerElo")),
+             ), DT::dataTableOutput("playerElo")),
     tabPanel("teamElo Ranks", 
              DT::dataTableOutput("teamElo")),
     tabPanel("playerElo Graphically",
-             selectInput(inputId = "plySelect", label = "Player", choices = player_map$Name, 
+             selectInput(inputId = "plySelect", label = "Player", choices = allPlayerEloX$Name, 
                          multiple = T, selected = NULL),
              tags$em("Please allow a few moments for the graph to update."),
-             tags$p(""),
              plotOutput("graph", height = 600))
   )
 )
@@ -465,8 +464,8 @@ server <- function(input, output) {
     player_highlight <- input$plySelect
     player_ids <- allPlayerEloX[match(player_highlight, allPlayerEloX$Name), ]
     
-    background_data <- filter(positions, !playerID %in% player_ids)
-    highlight_data <- filter(positions, playerID %in% player_ids)
+    background_data <- filter(allPlayerEloX, !playerID %in% player_ids$playerID)
+    highlight_data <- filter(allPlayerEloX, playerID %in% player_ids$playerID)
     last_point <- highlight_data %>%
       group_by(playerID) %>%
       filter(PA == max(PA))
