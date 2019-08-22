@@ -12,6 +12,12 @@ p19EloDisplay <- read_csv("data/p19EloDisplay.csv")
 eloTeam19 <- read_csv("data/eloTeam19.csv")
 allPlayerEloX <- read_csv("data/allPlayerEloX.csv")
 
+allElo <- rbind(b19EloDisplay, p19EloDisplay)
+brksPlayer <- quantile(allElo$playerElo, probs = seq(.05, .95, .05), na.rm = TRUE)
+brksTeam <- quantile(eloTeam19$`Team Elo`, probs = seq(.05, .95, .05), na.rm = TRUE)
+clrNum <- round(seq(120, 255, length.out = 10), 0)
+clrs <- c(paste0("rgb(255,", clrNum, ",", clrNum, ")"), paste0("rgb(", 355-clrNum, ",", 355-clrNum, ",255)"))
+
 # write ui for shiny app
 ui <- fluidPage(
   tags$strong(tags$h1("playerElo 2019")),
@@ -21,6 +27,7 @@ ui <- fluidPage(
     tabPanel("playerElo Ranks", 
              tags$em(tags$h6("Column Header Notes: EV = Exit Velocity,
                              HH% = Hard Hit Percentage, Trend = Difference of playerElo 50 PA ago")),
+             tags$p(tags$em(tags$h6("Colors are on a 5% quantile basis"))),
              fluidRow(column(4, selectInput("pos", "Position", 
                                             c("Batters", "Pitchers", "C", "1B", "2B", "SS", 
                                               "3B", "OF", "DH", "SP", "RP"), selected = "Batters")),
@@ -72,7 +79,9 @@ server <- function(input, output) {
   }, options = list(lengthChange = FALSE, pageLength = 100,
                     columnDefs = list(list(className = 'dt-center', targets = 3:10)))) %>%
     formatRound(c("EV", "HH%"), 1) %>%
-    formatRound(c("wOBA", "xwOBA"), 3))
+    formatRound(c("wOBA", "xwOBA"), 3) %>%
+    formatStyle('playerElo', backgroundColor = styleInterval(brksPlayer, clrs))
+  )
   
   output$teamElo <-
     renderDT({
@@ -83,7 +92,9 @@ server <- function(input, output) {
           className = 'dt-center', targets = 2:10
         ))
       )) %>%
-        formatRound(c("Pythagorean WPct", "WPct"), 3)
+        formatRound(c("Pythagorean WPct", "WPct"), 3) %>%
+        formatStyle(c('Team Elo', 'Batting Elo', 'Pitching Elo'), 
+                    backgroundColor = styleInterval(brksTeam, clrs))
     })
   
   output$graph <- renderPlot({

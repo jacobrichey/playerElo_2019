@@ -85,7 +85,7 @@ compute.runs.value <- function(data) {
            ][, Runs_Value := RE_NewState - RE_State + Runs_OnPlay]
 }
 
-RE19 <- fread("data/08-18-2019-mlb-season-pbp-feed.csv")
+RE19 <- fread("data/08-20-2019-mlb-season-pbp-feed.csv")
 RE19 <- pbp.compile(RE19)
 RE19 <- compute.runs.value(RE19)
 
@@ -344,7 +344,7 @@ eloTeam19 <- eloTeam19 %>%
          TeamPitchingElo = round(TeamPitchingElo, 0),
          aggTeamElo = round(aggTeamElo, 0)) %>%
   arrange(desc(aggTeamElo)) %>%
-  select(Team, TeamBattingElo, TeamPitchingElo, aggTeamElo, pythWPct, everything()) %>%
+  select(Team, W, L, WPct, pythWPct, Runs_Scored, Runs_Against, TeamBattingElo, TeamPitchingElo, aggTeamElo) %>%
   rename('Batting Elo' = TeamBattingElo,
          'Pitching Elo' = TeamPitchingElo,
          'Team Elo' = aggTeamElo,

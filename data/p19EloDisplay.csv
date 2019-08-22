@@ -1,412 +1,412 @@
 Name,Team,Position,PA,EV,HH%,wOBA,xwOBA,Trend,playerElo
 Max Scherzer,Washington Nationals,SP,535,87.4,35.1,0.26,0.249,3,1179
 Hyun-Jin Ryu,Los Angeles Dodgers,SP,576,85.3,31,0.253,0.278,-13,1166
-Kirby Yates,San Diego Padres,RP,194,86,34,0.212,0.218,13,1162
-Giovanny Gallegos,St. Louis Cardinals,RP,213,89.1,39.5,0.21,0.249,61,1161
+Giovanny Gallegos,St. Louis Cardinals,RP,218,89.1,38.7,0.211,0.247,57,1164
+Sonny Gray,Cincinnati Reds,SP,561,87.4,34.3,0.271,0.282,32,1153
+Kirby Yates,San Diego Padres,RP,201,86.3,35.2,0.223,0.225,4,1152
 Jacob deGrom,New York Mets,SP,624,86.6,33.8,0.266,0.263,29,1151
 Gerrit Cole,Houston Astros,SP,614,87.7,36.6,0.267,0.257,17,1151
-Sonny Gray,Cincinnati Reds,SP,537,87.4,33.9,0.27,0.279,48,1145
-Shane Bieber,Cleveland Indians,SP,647,90.2,42.5,0.276,0.298,-5,1137
 Mike Clevinger,Cleveland Indians,SP,288,86.7,34.4,0.278,0.277,-1,1130
 Zack Britton,New York Yankees,RP,212,87.6,36,0.271,0.287,25,1129
-Clayton Kershaw,Los Angeles Dodgers,SP,538,87.3,33,0.265,0.284,35,1128
-Aroldis Chapman,New York Yankees,RP,207,85.6,30.6,0.249,0.262,18,1126
-Aaron Bummer,Chicago White Sox,RP,189,87.8,34.4,0.236,0.26,36,1124
+Aroldis Chapman,New York Yankees,RP,207,85.6,30.6,0.249,0.262,17,1126
 Lance Lynn,Texas Rangers,SP,690,86.9,32.5,0.295,0.284,2,1121
-Mike Minor,Texas Rangers,SP,660,86.4,31.2,0.294,0.293,13,1121
+Mike Minor,Texas Rangers,SP,660,86.4,31.2,0.294,0.293,12,1121
+Felipe Vazquez,Pittsburgh Pirates,RP,196,86.7,39.3,0.26,0.275,15,1120
+Shane Bieber,Cleveland Indians,SP,671,90.3,42.6,0.276,0.298,-21,1120
 Brandon Workman,Boston Red Sox,RP,221,87.7,31.5,0.207,0.263,16,1120
 Jack Flaherty,St. Louis Cardinals,SP,572,87,34.4,0.286,0.297,37,1119
 Justin Verlander,Houston Astros,SP,654,87.9,34.5,0.256,0.257,-24,1119
+Aaron Bummer,Chicago White Sox,RP,194,88,35.6,0.245,0.263,22,1118
 Adam Ottavino,New York Yankees,RP,228,85.1,28.6,0.279,0.268,-5,1117
-Felipe Vazquez,Pittsburgh Pirates,RP,192,86.7,39.4,0.261,0.272,15,1116
+Liam Hendriks,Oakland Athletics,SP,257,88.5,37.1,0.238,0.234,-11,1116
+Yusmeiro Petit,Oakland Athletics,RP,241,86.9,33.7,0.252,0.267,3,1116
 Taylor Rogers,Minnesota Twins,RP,229,87,29.4,0.279,0.262,-53,1115
-Liam Hendriks,Oakland Athletics,RP,253,88.4,36.9,0.237,0.234,-8,1113
+Clayton Kershaw,Los Angeles Dodgers,SP,561,87.5,33.1,0.274,0.291,11,1114
 Tyler Glasnow,Tampa Bay Rays,SP,183,86.8,30.3,0.227,0.232,22,1112
-Yusmeiro Petit,Oakland Athletics,RP,237,87.1,33.9,0.253,0.268,3,1110
 Mike Soroka,Atlanta Braves,SP,542,86.8,36.4,0.266,0.288,33,1110
 Scott Oberg,Colorado Rockies,RP,223,87.2,36.6,0.252,0.293,-42,1106
 Mike Fiers,Oakland Athletics,SP,619,87.2,38.1,0.289,0.323,-26,1105
 Oliver Perez,Cleveland Indians,RP,136,86,29.5,0.303,0.257,11,1103
-Charlie Morton,Tampa Bay Rays,SP,627,86.7,33.1,0.264,0.268,1,1101
-Tyler Clippard,Cleveland Indians,RP,184,84.8,29.2,0.255,0.249,52,1101
+Aaron Nola,Philadelphia Phillies,SP,676,88.6,38.5,0.301,0.298,28,1102
+Charlie Morton,Tampa Bay Rays,SP,627,86.7,33.1,0.264,0.268,1,1102
+Ryan Pressly,Houston Astros,RP,197,87.2,33.3,0.245,0.255,-41,1102
 Zack Greinke,Houston Astros,SP,640,86.8,33,0.267,0.282,16,1101
-Ryan Pressly,Houston Astros,RP,193,87.5,33.9,0.245,0.258,-36,1099
+Tyler Clippard,Cleveland Indians,RP,184,84.8,29.2,0.255,0.249,52,1101
+Will Harris,Houston Astros,RP,188,87.5,31.3,0.256,0.276,25,1098
 Reyes Moronta,San Francisco Giants,RP,230,87.7,36.9,0.265,0.283,13,1098
-Daniel Hudson,Washington Nationals,RP,240,89.3,42.2,0.287,0.307,14,1098
-Ryan Yarbrough,Tampa Bay Rays,SP,405,84.2,25.9,0.25,0.286,48,1097
-Will Harris,Houston Astros,RP,183,87.7,31.7,0.254,0.277,19,1096
+Ryan Yarbrough,Tampa Bay Rays,SP,405,84.2,25.9,0.25,0.286,47,1097
 Pedro Baez,Los Angeles Dodgers,RP,216,86.9,26.6,0.242,0.248,-2,1092
-Aaron Nola,Philadelphia Phillies,SP,651,88.5,39.1,0.304,0.299,2,1092
-Jose Alvarez,Philadelphia Phillies,RP,196,86,31.7,0.309,0.29,22,1091
-Alex Colome,Chicago White Sox,RP,186,90.3,39.4,0.239,0.317,-21,1087
-Jose Leclerc,Texas Rangers,RP,226,86.5,28.1,0.296,0.256,15,1087
-John Gant,St. Louis Cardinals,RP,218,86.4,30.4,0.26,0.28,11,1085
+Jose Alvarez,Philadelphia Phillies,RP,198,86.1,31.3,0.31,0.289,20,1091
+Jose Leclerc,Texas Rangers,RP,236,86.6,28,0.301,0.261,14,1087
 Jimmie Sherfy,Arizona Diamondbacks,RP,43,83.5,27.6,0.32,0.326,84,1084
 Josh Hader,Milwaukee Brewers,RP,220,90.7,46.6,0.269,0.249,-42,1084
 Nick Wittgren,Cleveland Indians,RP,189,91.3,48,0.274,0.304,26,1084
+Marcus Walden,Boston Red Sox,RP,255,90,36.5,0.268,0.301,56,1082
+Alex Colome,Chicago White Sox,RP,192,90.4,39.4,0.245,0.323,-21,1082
 Ken Giles,Toronto Blue Jays,RP,157,88.7,36.3,0.258,0.243,8,1081
-Brad Hand,Cleveland Indians,RP,209,88.6,39.1,0.284,0.275,-28,1079
+Brad Hand,Cleveland Indians,RP,209,88.6,39.1,0.284,0.275,-27,1080
 Brandon Kintzler,Chicago Cubs,RP,181,89,41.6,0.259,0.292,-8,1079
-Patrick Corbin,Washington Nationals,SP,631,89.4,40.8,0.288,0.301,14,1078
-Marcus Walden,Boston Red Sox,RP,250,89.9,36.8,0.27,0.299,57,1075
+Daniel Hudson,Washington Nationals,RP,245,89.2,41.8,0.29,0.309,-0,1079
+Patrick Corbin,Washington Nationals,SP,631,89.4,40.8,0.288,0.301,15,1079
+Kyle Ryan,Chicago Cubs,RP,197,88.6,41.7,0.271,0.285,50,1074
 Will Smith,San Francisco Giants,RP,213,88.4,39.5,0.262,0.257,-7,1073
 Tony Sipp,Washington Nationals,RP,92,88.1,34.4,0.284,0.34,-12,1072
-Kyle Ryan,Chicago Cubs,RP,193,88.4,40.8,0.272,0.279,49,1070
-Shawn Kelley,Texas Rangers,RP,157,87.9,32.8,0.349,0.356,-49,1069
-John Brebbia,St. Louis Cardinals,RP,241,87.4,35.7,0.257,0.262,47,1069
-Andrew Chafin,Arizona Diamondbacks,RP,183,85.7,34.8,0.285,0.297,15,1068
+Zac Gallen,Arizona Diamondbacks,SP,217,87.8,36.2,0.285,0.308,13,1071
+Brad Keller,Kansas City Royals,SP,699,88.9,38.1,0.306,0.33,26,1071
+Shawn Kelley,Texas Rangers,RP,165,87.7,33.1,0.35,0.351,-53,1069
+Hansel Robles,Los Angeles Angels,RP,231,87.8,30.5,0.281,0.28,-11,1067
 Steve Cishek,Chicago Cubs,RP,208,84.2,25.9,0.296,0.305,-26,1067
-Eduardo Rodriguez,Boston Red Sox,SP,654,85.6,28.1,0.318,0.309,26,1066
-Zac Gallen,Arizona Diamondbacks,SP,190,88.2,36.8,0.281,0.307,32,1063
-Keone Kela,Pittsburgh Pirates,RP,73,88.7,29.8,0.298,0.292,25,1061
+John Gant,St. Louis Cardinals,RP,222,86.6,30.9,0.267,0.283,9,1067
+Eduardo Rodriguez,Boston Red Sox,SP,654,85.6,28.1,0.318,0.309,25,1066
+Keone Kela,Pittsburgh Pirates,RP,76,88.8,29.2,0.286,0.282,34,1065
 Aaron Civale,Cleveland Indians,SP,93,86.5,32.3,0.231,0.239,18,1061
-Arodys Vizcaino,Atlanta Braves,SP,17,88.2,50,0.384,0.408,60,1060
 Luis Castillo,Cincinnati Reds,SP,605,85.6,32.2,0.28,0.28,-54,1060
+Arodys Vizcaino,Atlanta Braves,SP,17,88.2,50,0.384,0.408,60,1060
 Rich Hill,Los Angeles Dodgers,SP,217,84.2,26.8,0.299,0.265,-11,1060
-Julio Urias,Los Angeles Dodgers,SP,278,83.5,26.1,0.267,0.276,-7,1059
+Julio Urias,Los Angeles Dodgers,SP,278,83.5,26.1,0.267,0.276,-6,1060
+Trevor May,Minnesota Twins,RP,203,86.5,31.1,0.271,0.287,-1,1058
 Kyle Hendricks,Chicago Cubs,SP,561,85.4,31.3,0.296,0.297,-37,1058
 Nick Goody,Cleveland Indians,RP,122,85.6,26.8,0.251,0.22,48,1057
-Chris Bassitt,Oakland Athletics,SP,504,86.8,31.5,0.303,0.302,20,1056
-Hansel Robles,Los Angeles Angels,RP,221,88.2,31.1,0.28,0.279,-14,1056
+Chris Bassitt,Oakland Athletics,SP,504,86.8,31.5,0.303,0.302,20,1057
+John Brebbia,St. Louis Cardinals,RP,251,88,37.7,0.262,0.27,22,1056
 Matt Shoemaker,Toronto Blue Jays,SP,108,89.2,39.2,0.241,0.334,14,1056
 David Hale,New York Yankees,RP,153,86.2,26.6,0.288,0.276,11,1056
-Brandon Woodruff,Milwaukee Brewers,SP,480,85.7,30.3,0.29,0.29,-5,1055
+Brandon Woodruff,Milwaukee Brewers,SP,480,85.7,30.3,0.29,0.29,-4,1056
 Emilio Pagan,Tampa Bay Rays,RP,200,89.1,33,0.236,0.217,41,1055
-Sam Dyson,Minnesota Twins,RP,223,87.3,36.1,0.278,0.286,-19,1054
-Yu Darvish,Chicago Cubs,SP,579,87.8,37.5,0.304,0.305,23,1054
-Trevor May,Minnesota Twins,RP,200,86.7,31.7,0.276,0.29,-17,1054
-Cam Bedrosian,Los Angeles Angels,RP,236,88.4,35.1,0.259,0.294,48,1054
+Sam Dyson,Minnesota Twins,RP,223,87.3,36.1,0.278,0.285,-18,1055
+Yu Darvish,Chicago Cubs,SP,579,87.8,37.5,0.304,0.305,23,1055
+Richard Rodriguez,Pittsburgh Pirates,RP,219,90,39,0.313,0.305,15,1054
+Roberto Osuna,Houston Astros,RP,200,86.3,30.8,0.244,0.258,-28,1054
+Rafael Montero,Texas Rangers,RP,59,83.9,21.1,0.25,0.281,46,1054
+Andrew Chafin,Arizona Diamondbacks,RP,187,85.9,34.8,0.293,0.304,-7,1053
 Seth Lugo,New York Mets,RP,238,88.8,33.8,0.261,0.252,10,1053
-Amir Garrett,Cincinnati Reds,RP,193,86.8,31.6,0.286,0.279,-29,1053
-Wade Miley,Houston Astros,SP,587,87.3,32,0.289,0.282,-57,1052
+Hector Neris,Philadelphia Phillies,RP,215,87.3,33.9,0.27,0.258,23,1053
 Frankie Montas,Oakland Athletics,SP,371,87.2,34.9,0.28,0.277,21,1052
-Justin Shafer,Toronto Blue Jays,RP,126,89.3,36.1,0.324,0.322,23,1051
-Yoan Lopez,Arizona Diamondbacks,RP,194,91.8,43.4,0.277,0.357,12,1051
-Hunter Wood,Cleveland Indians,RP,147,85.3,25,0.283,0.28,12,1051
+Josh Taylor,Boston Red Sox,RP,147,86.5,28.4,0.273,0.265,74,1051
+Chris Martin,Atlanta Braves,RP,179,88.5,40.5,0.296,0.296,-21,1050
+Jandel Gustave,San Francisco Giants,RP,47,89.7,35,0.201,0.376,49,1049
 Carlos Martinez,St. Louis Cardinals,RP,140,85.4,33,0.294,0.292,-32,1049
 Jared Hughes,Cincinnati Reds,RP,207,88.6,34.2,0.306,0.319,-51,1049
-Richard Rodriguez,Pittsburgh Pirates,RP,213,89.8,38.3,0.318,0.305,17,1048
+Nick Anderson,Tampa Bay Rays,RP,212,90.7,45.4,0.275,0.268,40,1049
+Tim Mayza,Toronto Blue Jays,RP,204,86.4,38.8,0.295,0.318,10,1049
 Tommy Kahnle,New York Yankees,RP,201,88.1,36,0.252,0.246,40,1048
-Hector Neris,Philadelphia Phillies,RP,212,87,33.1,0.268,0.254,17,1048
-Ian Kennedy,Kansas City Royals,RP,204,87.8,34.6,0.28,0.264,32,1048
-Roberto Osuna,Houston Astros,RP,193,86.4,31,0.246,0.261,-42,1047
-Walker Buehler,Los Angeles Dodgers,SP,571,88.9,36.4,0.271,0.274,-14,1047
+Yoan Lopez,Arizona Diamondbacks,RP,200,91.6,43,0.284,0.358,2,1048
+Stephen Strasburg,Washington Nationals,SP,673,87.5,33.3,0.275,0.265,8,1048
+Walker Buehler,Los Angeles Dodgers,SP,571,88.9,36.4,0.271,0.274,-15,1047
 Marcus Stroman,New York Mets,SP,586,87.3,35.4,0.298,0.289,-12,1047
+Justin Wilson,New York Mets,RP,108,84.8,27.5,0.311,0.283,17,1047
 Jordan Hicks,St. Louis Cardinals,RP,110,86.9,28.6,0.233,0.236,-22,1047
-Josh Taylor,Boston Red Sox,RP,144,86.5,28.7,0.279,0.271,55,1047
-Nick Anderson,Tampa Bay Rays,RP,208,90.6,45.7,0.272,0.271,43,1046
-Brad Keller,Kansas City Royals,SP,677,89,38.6,0.31,0.332,-7,1046
-Chris Martin,Atlanta Braves,RP,176,88.4,39.5,0.301,0.295,-20,1046
-Joakim Soria,Oakland Athletics,RP,232,87.3,35.4,0.266,0.294,10,1046
-Tim Mayza,Toronto Blue Jays,RP,200,86.3,38.6,0.297,0.316,14,1045
 Kenley Jansen,Los Angeles Dodgers,RP,197,84.6,27.1,0.282,0.264,-3,1045
-Cal Quantrill,San Diego Padres,SP,309,87.8,34.1,0.285,0.315,18,1045
-Jandel Gustave,San Francisco Giants,RP,45,90.1,36.8,0.21,0.391,45,1045
+Cam Bedrosian,Los Angeles Angels,RP,246,88.5,36.1,0.262,0.293,28,1045
+Mychal Givens,Baltimore Orioles,RP,202,88.4,38.3,0.312,0.303,-4,1044
+Raisel Iglesias,Cincinnati Reds,RP,220,87.4,33.6,0.306,0.284,-0,1044
 Jameson Taillon,Pittsburgh Pirates,SP,158,87.7,39.8,0.287,0.315,-31,1044
 Blake Snell,Tampa Bay Rays,SP,413,87.8,31.5,0.304,0.263,47,1044
-Pedro Strop,Chicago Cubs,RP,126,90.6,39.7,0.333,0.312,-55,1044
-Jon Gray,Colorado Rockies,SP,637,88.9,43.6,0.326,0.325,54,1043
+Amir Garrett,Cincinnati Reds,RP,195,86.8,31.6,0.29,0.283,-38,1044
+Pedro Strop,Chicago Cubs,RP,126,90.6,39.7,0.333,0.312,-56,1044
+Jon Gray,Colorado Rockies,SP,637,88.9,43.6,0.326,0.325,54,1044
 David Robertson,Philadelphia Phillies,RP,33,92.9,47.6,0.382,0.387,43,1043
-Rafael Montero,Texas Rangers,RP,50,83.3,22.6,0.233,0.239,42,1042
-Diego Castillo,Tampa Bay Rays,RP,205,87.3,32.3,0.301,0.265,10,1042
+Cal Quantrill,San Diego Padres,SP,332,87.8,34.2,0.282,0.311,12,1043
+Ian Kennedy,Kansas City Royals,RP,209,88,35,0.287,0.265,29,1043
 Seranthony Dominguez,Philadelphia Phillies,RP,110,84.7,30.9,0.319,0.29,-1,1041
-Ivan Nova,Chicago White Sox,SP,621,88.3,38.8,0.342,0.344,53,1041
-Mychal Givens,Baltimore Orioles,RP,198,88.5,38.4,0.314,0.305,-5,1040
-Raisel Iglesias,Cincinnati Reds,RP,217,87.5,33.9,0.31,0.288,5,1040
+Wade Miley,Houston Astros,SP,613,87.1,32.3,0.293,0.283,-62,1040
 Austin Adams,Seattle Mariners,RP,98,92,53.8,0.249,0.232,29,1040
-Michael Pineda,Minnesota Twins,SP,506,89.2,38.1,0.311,0.325,9,1040
-Justin Wilson,New York Mets,RP,106,84.8,27.5,0.317,0.288,9,1039
+Joakim Soria,Oakland Athletics,RP,237,87.4,35.6,0.273,0.296,2,1040
+Michael Lorenzen,Cincinnati Reds,RP,272,85.3,31.4,0.296,0.283,16,1039
+Anthony Bass,Seattle Mariners,RP,142,88,36.7,0.275,0.321,21,1039
+Taylor Guerrieri,Texas Rangers,RP,80,88,32.6,0.32,0.286,34,1039
 Tony Barnette,Chicago Cubs,SP,5,91.4,60,0.574,0.322,39,1039
-Andres Munoz,San Diego Padres,RP,62,85.2,25.7,0.215,0.272,21,1038
+Tyler Duffey,Minnesota Twins,RP,178,87.3,33.9,0.275,0.271,56,1039
 Jose Quintana,Chicago Cubs,SP,600,88.8,37.6,0.307,0.316,41,1038
-Harrison Musgrave,Colorado Rockies,RP,47,88.8,39.3,0.284,0.317,37,1037
+Andres Munoz,San Diego Padres,RP,62,85.2,25.7,0.215,0.272,21,1038
+Harrison Musgrave,Colorado Rockies,RP,47,88.8,39.3,0.284,0.317,38,1038
 Sam Coonrod,San Francisco Giants,RP,60,86.9,31.7,0.249,0.268,37,1037
-Anthony Bass,Seattle Mariners,RP,137,88.1,35.8,0.273,0.317,20,1036
-Wander Suero,Washington Nationals,RP,226,89.4,34.8,0.29,0.305,42,1036
-Yoshihisa Hirano,Arizona Diamondbacks,RP,208,86.7,28.2,0.327,0.3,-48,1035
-Michael Lorenzen,Cincinnati Reds,RP,269,85.2,32,0.299,0.284,15,1035
-Tyler Duffey,Minnesota Twins,RP,176,87.1,33.3,0.278,0.271,37,1035
+Ivan Nova,Chicago White Sox,SP,646,88.5,39.5,0.345,0.347,24,1037
+Yoshihisa Hirano,Arizona Diamondbacks,RP,208,86.7,28.2,0.327,0.3,-47,1036
 Justin Miller,Washington Nationals,RP,65,88,35.4,0.372,0.333,-41,1035
 Xavier Cedeno,Chicago Cubs,RP,13,85.8,33.3,0.467,0.346,35,1035
+Brock Burke,Texas Rangers,SP,23,85.8,29.4,0.228,0.212,34,1034
 Tommy Hunter,Philadelphia Phillies,RP,18,81.6,15.4,0.097,0.177,34,1034
+Sam Tuivailala,Seattle Mariners,RP,47,87.1,36.7,0.211,0.248,33,1033
 Jake Odorizzi,Minnesota Twins,SP,522,87.8,35.5,0.298,0.309,32,1032
-Trevor Gott,San Francisco Giants,RP,200,88,37.2,0.246,0.301,28,1031
-Sergio Romo,Minnesota Twins,RP,194,85.3,23.4,0.273,0.271,28,1031
-Blake Treinen,Oakland Athletics,RP,232,86.9,34.7,0.331,0.331,-9,1030
+Sergio Romo,Minnesota Twins,RP,195,85.3,23.4,0.272,0.27,29,1032
+Hunter Wood,Cleveland Indians,RP,151,85.5,25.9,0.29,0.28,-15,1032
+Trevor Gott,San Francisco Giants,RP,200,88,37.2,0.246,0.301,29,1032
+Michael Pineda,Minnesota Twins,SP,532,88.9,37.2,0.31,0.322,-9,1031
+Ryan Helsley,St. Louis Cardinals,RP,84,87,38.2,0.252,0.3,47,1031
+Blake Treinen,Oakland Athletics,RP,232,86.9,34.7,0.331,0.331,-8,1031
 David Phelps,Chicago Cubs,RP,91,89.2,37.9,0.297,0.283,21,1030
 Jeff Samardzija,San Francisco Giants,SP,574,89,37.6,0.292,0.317,33,1030
-Hector Rondon,Houston Astros,RP,200,86.9,34.3,0.319,0.289,17,1030
-Taylor Guerrieri,Texas Rangers,RP,72,87.4,32.6,0.314,0.272,34,1029
-Sam Tuivailala,Seattle Mariners,RP,43,87.9,37,0.215,0.211,29,1029
-Daniel Ponce de Leon,St. Louis Cardinals,SP,165,87.7,26.5,0.284,0.29,-47,1028
-Ryan Helsley,St. Louis Cardinals,RP,78,86.1,36,0.244,0.285,25,1028
-Adam Cimber,Cleveland Indians,RP,200,86.8,31.8,0.291,0.287,-54,1027
-Noah Syndergaard,New York Mets,SP,635,86.3,29.8,0.295,0.271,11,1026
-Cody Reed,Cincinnati Reds,SP,25,89,44.4,0.219,0.165,26,1026
-Craig Kimbrel,Chicago Cubs,RP,64,89.9,35.3,0.416,0.382,-14,1026
+Craig Kimbrel,Chicago Cubs,RP,67,90.2,36.1,0.397,0.373,7,1030
+Diego Castillo,Tampa Bay Rays,RP,214,87.3,32.1,0.305,0.267,-13,1030
+Daniel Ponce de Leon,St. Louis Cardinals,SP,165,87.7,26.5,0.284,0.29,-46,1029
+Hector Rondon,Houston Astros,RP,207,86.7,33.8,0.322,0.292,49,1027
+Dallas Keuchel,Atlanta Braves,SP,306,87.6,38.5,0.335,0.334,24,1027
+Noah Syndergaard,New York Mets,SP,635,86.3,29.8,0.295,0.271,12,1027
 Yonny Chirinos,Tampa Bay Rays,SP,504,87.6,33.7,0.286,0.318,-24,1026
+Cody Reed,Cincinnati Reds,SP,25,89,44.4,0.219,0.165,26,1026
 Steven Wright,Boston Red Sox,RP,33,90.6,34.8,0.51,0.459,25,1025
 Joe Kelly,Los Angeles Dodgers,RP,185,89.9,40.9,0.313,0.279,31,1024
-Adam Kolarek,Los Angeles Dodgers,RP,198,86.8,35,0.291,0.297,-3,1023
-Blake Parker,Philadelphia Phillies,RP,192,89.1,41.6,0.315,0.347,-1,1023
+Kevin Ginkel,Arizona Diamondbacks,RP,34,87.2,31.6,0.259,0.265,24,1024
+Dylan Floro,Los Angeles Dodgers,RP,161,84.7,35.1,0.286,0.29,-25,1024
+Adam Kolarek,Los Angeles Dodgers,RP,198,86.8,35,0.291,0.297,-3,1024
+Blake Parker,Philadelphia Phillies,RP,192,89.1,41.6,0.315,0.347,0,1024
+Joe Smith,Houston Astros,RP,49,94.4,62.2,0.263,0.266,23,1023
 Tony Gonsolin,Los Angeles Dodgers,SP,73,86.8,35.1,0.246,0.274,47,1023
+Luis Avilan,New York Mets,RP,102,85.4,24.6,0.333,0.339,47,1023
 Jacob Webb,Atlanta Braves,RP,131,88,33.3,0.287,0.281,46,1021
 Grant Dayton,Atlanta Braves,RP,37,91.3,39.1,0.353,0.27,21,1021
 Mark Melancon,Atlanta Braves,RP,230,89.1,36.5,0.312,0.297,10,1021
-Casey Sadler,Los Angeles Dodgers,RP,128,86.5,31.3,0.264,0.291,30,1021
 Max Fried,Atlanta Braves,SP,564,88.4,39.8,0.327,0.3,12,1021
-Noe Ramirez,Los Angeles Angels,RP,206,87,33.1,0.299,0.284,-13,1020
-Dylan Floro,Los Angeles Dodgers,RP,157,84.8,34.5,0.288,0.294,-23,1020
+Casey Sadler,Los Angeles Dodgers,RP,128,86.5,31.3,0.264,0.291,30,1021
 Victor Arano,Philadelphia Phillies,SP,16,92.9,28.6,0.266,0.3,20,1020
-Joe Smith,Houston Astros,RP,46,94.8,61.8,0.262,0.261,19,1019
-Stephen Strasburg,Washington Nationals,SP,648,87.4,33.6,0.279,0.265,-26,1019
+Jace Fry,Chicago White Sox,RP,193,89,42.6,0.325,0.336,-22,1020
+Wander Suero,Washington Nationals,RP,229,89.1,35,0.297,0.311,20,1019
 Anthony Swarzak,Atlanta Braves,RP,186,88.5,47.1,0.319,0.335,-29,1019
-Luis Avilan,New York Mets,RP,99,84.8,22.7,0.343,0.333,35,1019
+Matt Barnes,Boston Red Sox,RP,214,89.2,35.7,0.302,0.273,-24,1019
+Ian Gibaut,Texas Rangers,SP,29,94.4,50,0.241,0.292,18,1018
+Michael Feliz,Pittsburgh Pirates,RP,188,86.5,32.5,0.283,0.276,51,1018
 Randy Dobnak,Minnesota Twins,SP,17,91.2,57.1,0.309,0.298,18,1018
-Zach Plesac,Cleveland Indians,SP,334,89.1,37.5,0.321,0.339,-15,1017
+Justin Shafer,Toronto Blue Jays,RP,136,89.5,36.4,0.353,0.321,-11,1017
 Madison Bumgarner,San Francisco Giants,SP,666,89.4,40.4,0.295,0.306,7,1017
-Oliver Drake,Tampa Bay Rays,RP,131,89,38.2,0.293,0.296,11,1017
+Zach Plesac,Cleveland Indians,SP,334,89.1,37.5,0.321,0.339,-15,1017
 Anibal Sanchez,Washington Nationals,SP,536,86.3,27.2,0.31,0.307,-50,1017
+Adrian Houser,Milwaukee Brewers,SP,320,85.8,35.1,0.315,0.282,44,1017
 Clay Buchholz,Toronto Blue Jays,SP,108,86.6,33.7,0.377,0.382,-86,1017
-Adrian Houser,Milwaukee Brewers,SP,320,85.8,35.1,0.315,0.282,43,1016
-Jake Newberry,Kansas City Royals,RP,115,91.1,41.8,0.319,0.332,33,1016
 Kohl Stewart,Minnesota Twins,RP,93,88.7,39.7,0.349,0.353,14,1016
+Rowan Wick,Chicago Cubs,RP,74,86.5,33.3,0.245,0.279,30,1016
 Ryan Eades,Minnesota Twins,SP,16,94.8,77.8,0.328,0.395,16,1016
+Mike Morin,Philadelphia Phillies,RP,143,86.3,27.4,0.256,0.296,14,1016
+Oliver Drake,Tampa Bay Rays,RP,138,88.8,37,0.293,0.29,2,1016
 Pat Neshek,Philadelphia Phillies,RP,78,87.1,33.8,0.352,0.376,-22,1015
-Michael Feliz,Pittsburgh Pirates,RP,179,86.4,32.7,0.286,0.279,45,1015
-Jace Fry,Chicago White Sox,RP,190,89.1,43.4,0.33,0.34,-43,1015
-Junior Guerra,Milwaukee Brewers,SP,277,85.8,28.9,0.278,0.298,35,1014
-Matt Barnes,Boston Red Sox,RP,209,89.3,35.4,0.306,0.273,-21,1014
+Noe Ramirez,Los Angeles Angels,RP,211,87.1,33.1,0.303,0.289,-27,1015
+Yency Almonte,Colorado Rockies,RP,79,88.2,35.6,0.281,0.341,6,1015
+Andrew Heaney,Los Angeles Angels,SP,269,88.4,37.7,0.304,0.298,35,1015
 Jeremy Walker,Atlanta Braves,SP,26,90.4,35,0.295,0.303,14,1014
 Devin Smeltzer,Minnesota Twins,SP,143,90,38.3,0.326,0.346,-29,1014
 J.B. Wendelken,Oakland Athletics,RP,106,85.8,31.8,0.261,0.228,-30,1013
+Ryan Brasier,Boston Red Sox,RP,177,87.4,30.9,0.302,0.337,-33,1013
 Joe Biagini,Houston Astros,RP,242,87.7,31.9,0.331,0.333,-2,1013
 Chandler Shepherd,Baltimore Orioles,SP,19,94.8,42.9,0.377,0.424,13,1013
 Russell Martin,Los Angeles Dodgers,NA,9,91.3,37.5,0.097,0.183,12,1012
-Cole Hamels,Chicago Cubs,SP,467,89.3,40.8,0.31,0.316,-79,1012
 Lucas Giolito,Chicago White Sox,SP,580,88.2,34.4,0.286,0.282,15,1012
-Rowan Wick,Chicago Cubs,RP,71,86.3,32.6,0.256,0.283,31,1012
-Kevin Ginkel,Arizona Diamondbacks,RP,29,88.9,40,0.303,0.269,11,1011
+Andrew Miller,St. Louis Cardinals,RP,181,88.7,34,0.317,0.314,16,1012
+Phillips Valdez,Texas Rangers,RP,75,87.9,32.6,0.355,0.327,-6,1012
+Miguel Castro,Baltimore Orioles,RP,266,87.4,35.2,0.315,0.292,33,1012
 Carlos Carrasco,Cleveland Indians,SP,275,90.9,47.3,0.353,0.329,-47,1011
+Gio Gonzalez,Milwaukee Brewers,SP,244,87.4,36.6,0.314,0.344,-27,1011
 Junior Fernandez,St. Louis Cardinals,SP,14,93.9,50,0.299,0.333,11,1011
 Logan Webb,San Francisco Giants,SP,21,89,23.1,0.258,0.219,11,1011
 Luke Weaver,Arizona Diamondbacks,SP,254,89.2,41.4,0.283,0.307,6,1011
+Cole Hamels,Chicago Cubs,SP,492,89.2,40.4,0.31,0.315,-75,1011
 John Curtiss,Los Angeles Angels,SP,12,87.3,37.5,0.348,0.368,10,1010
 Connor Sadzeck,Seattle Mariners,RP,107,88.6,34.9,0.299,0.317,-40,1010
-Mike Morin,Philadelphia Phillies,RP,141,86.2,26.7,0.26,0.297,11,1010
+Cory Gearrin,Seattle Mariners,RP,176,88.1,32.7,0.315,0.315,34,1010
 Heath Hembree,Boston Red Sox,RP,167,89,33.7,0.338,0.317,-49,1010
+Robbie Ray,Arizona Diamondbacks,SP,602,86.1,36.6,0.314,0.311,14,1010
+JD Hammer,Philadelphia Phillies,RP,82,89.5,33.9,0.318,0.378,12,1010
 Daniel Robertson,Tampa Bay Rays,NA,3,100.1,66.7,0.292,0.391,10,1010
 Kevin Plawecki,Cleveland Indians,NA,6,90.8,33.3,0,0.241,10,1010
-JD Hammer,Philadelphia Phillies,RP,82,89.5,33.9,0.318,0.378,12,1010
-Lewis Thorpe,Minnesota Twins,SP,45,87,30.3,0.368,0.351,10,1010
-Luke Maile,Toronto Blue Jays,NA,8,86.1,0,0.199,0.152,9,1009
-Robbie Ray,Arizona Diamondbacks,SP,602,86.1,36.6,0.314,0.311,13,1009
+Hunter Harvey,Baltimore Orioles,SP,7,96.4,50,0.099,0.235,10,1010
+Luke Maile,Toronto Blue Jays,NA,8,86.1,0,0.199,0.152,10,1010
+Ross Stripling,Los Angeles Dodgers,SP,317,88.1,38.6,0.306,0.281,6,1009
 Jared Walsh,Los Angeles Angels,NA,20,88.2,27.3,0.304,0.308,9,1009
 Kyle Farmer,Cincinnati Reds,NA,5,87.3,NA,0.175,0.271,9,1009
-Ross Stripling,Los Angeles Dodgers,SP,317,88.1,38.6,0.306,0.281,6,1009
+Adam Cimber,Cleveland Indians,RP,204,86.6,31.8,0.298,0.29,-75,1009
 Pablo Sandoval,San Francisco Giants,NA,3,87.5,0,0.24,0.358,9,1009
 Duane Underwood Jr.,Chicago Cubs,NA,13,91.3,66.7,0.31,0.209,9,1009
-Ryan Brasier,Boston Red Sox,RP,174,87.6,31.4,0.307,0.342,-37,1008
+Lewis Thorpe,Minnesota Twins,SP,54,87.2,28.9,0.352,0.341,6,1009
+Taylor Cole,Los Angeles Angels,RP,184,86.8,38.5,0.313,0.318,-77,1008
+Emmanuel Clase,Texas Rangers,RP,38,86.9,40.7,0.292,0.268,8,1008
 Alex Avila,Arizona Diamondbacks,NA,8,82.2,33.3,0.305,0.245,8,1008
 Jon Edwards,Cleveland Indians,RP,36,87,39.1,0.359,0.466,8,1008
-Phillips Valdez,Texas Rangers,RP,57,89.1,33.3,0.38,0.311,-1,1008
-Zac Grotz,Seattle Mariners,SP,28,88.3,35.3,0.291,0.311,7,1007
+Zac Grotz,Seattle Mariners,SP,28,88.3,35.3,0.291,0.311,8,1008
 Pablo Lopez,Miami Marlins,SP,314,87.9,36.7,0.287,0.291,12,1007
-Yency Almonte,Colorado Rockies,RP,75,88.4,36.2,0.287,0.351,3,1007
 Nate Jones,Chicago White Sox,RP,47,91.8,41.4,0.344,0.289,7,1007
 Pedro Avila,San Diego Padres,SP,23,79.1,0,0.243,0.232,7,1007
 Nate Karns,Baltimore Orioles,SP,25,85.2,43.8,0.371,0.313,7,1007
-Devin Williams,Milwaukee Brewers,SP,18,82.4,23.1,0.32,0.258,6,1006
 Jakob Junis,Kansas City Royals,SP,656,89.8,40.5,0.336,0.341,19,1006
-Jeremy Jeffress,Milwaukee Brewers,RP,218,86.3,36.2,0.314,0.328,-44,1006
-Jose Peraza,Cincinnati Reds,NA,4,87.9,25,0.219,0.309,6,1006
+Devin Williams,Milwaukee Brewers,SP,25,85.7,31.6,0.339,0.335,6,1006
 Cy Sneed,Houston Astros,SP,54,88.4,36.8,0.356,0.31,4,1006
-Cory Gearrin,Seattle Mariners,RP,173,88.2,33.3,0.32,0.317,32,1006
+Jose Peraza,Cincinnati Reds,NA,4,87.9,25,0.219,0.309,6,1006
 Patrick Sandoval,Los Angeles Angels,SP,62,83.6,37.5,0.321,0.341,-4,1006
 Caleb Joseph,Arizona Diamondbacks,NA,4,94.3,33.3,0,0.177,5,1005
 Joel Kuhnel,Cincinnati Reds,SP,12,93.3,44.4,0.327,0.31,5,1005
 Ryan O'Rourke,New York Mets,SP,6,83.9,0,0.345,0.377,5,1005
 Bryan Abreu,Houston Astros,SP,3,76.9,0,0,0.057,5,1005
 Taylor Davis,Chicago Cubs,NA,6,84.7,0,0.438,0.459,5,1005
-Hunter Harvey,Baltimore Orioles,SP,4,100.3,100,0.173,0.199,5,1005
 Jose Rondon,Chicago White Sox,NA,5,88.6,0,0.35,0.511,5,1005
 Sean Rodriguez,Philadelphia Phillies,NA,3,99.5,100,0,0.13,5,1005
 Chris Ellis,Kansas City Royals,SP,5,88.5,25,0.313,0.425,5,1005
 Edubray Ramos,Philadelphia Phillies,RP,63,84.5,22.9,0.405,0.352,-60,1005
-Charlie Culberson,Atlanta Braves,NA,10,92.6,42.9,0.349,0.429,5,1005
-Dallas Keuchel,Atlanta Braves,SP,281,87.4,38.6,0.336,0.341,-60,1005
+Chad Green,New York Yankees,RP,219,92.1,48.2,0.364,0.353,-45,1005
 Sam Howard,Colorado Rockies,RP,41,84.6,24,0.373,0.324,5,1005
+Charlie Culberson,Atlanta Braves,NA,10,92.6,42.9,0.349,0.429,5,1005
 AJ Reed,Chicago White Sox,NA,3,84.3,0,0,0.111,5,1005
-Chad Green,New York Yankees,RP,219,92.1,48.2,0.364,0.353,-44,1005
 Matt Ramsey,Los Angeles Angels,SP,3,88.5,0,0,0.008,4,1004
 Max Stassi,Houston Astros,NA,1,103.8,100,0,0.353,4,1004
 Nick Martini,Oakland Athletics,NA,5,65.8,0,0.276,0.317,4,1004
 Jacob Stallings,Pittsburgh Pirates,NA,3,82.5,0,0,0.077,4,1004
+Miguel Del Pozo,Los Angeles Angels,SP,2,80,0,0,0,4,1004
 Ty France,San Diego Padres,NA,4,90,25,0.219,0.158,4,1004
-Ian Kinsler,San Diego Padres,NA,6,87.5,33.3,0.496,0.677,4,1004
 Chasen Bradford,Seattle Mariners,RP,69,89,37,0.368,0.338,-13,1004
+Ian Kinsler,San Diego Padres,NA,6,87.5,33.3,0.496,0.677,4,1004
+Luke Jackson,Atlanta Braves,RP,253,87.3,33.3,0.319,0.273,-38,1004
 JB Shuck,Pittsburgh Pirates,NA,5,85,25,0.313,0.354,4,1004
 Travis Lakins,Boston Red Sox,RP,58,88.9,42.5,0.307,0.313,-11,1003
 Wei-Chung Wang,Oakland Athletics,RP,110,87.3,26.8,0.304,0.309,-47,1003
+Jake Newberry,Kansas City Royals,RP,119,91,42,0.337,0.353,23,1003
 Jordan Romano,Toronto Blue Jays,SP,19,88.7,33.3,0.284,0.308,3,1003
-Chaz Roe,Tampa Bay Rays,RP,179,87.2,32.7,0.308,0.302,43,1003
 Jose Berrios,Minnesota Twins,SP,661,86.5,31.8,0.296,0.298,-76,1003
+Luis Perdomo,San Diego Padres,RP,215,90.2,45.6,0.28,0.303,42,1003
 Kyle Keller,Miami Marlins,SP,7,97.2,60,0.383,0.547,2,1002
-Miguel Castro,Baltimore Orioles,RP,259,87.6,36,0.321,0.296,30,1002
 Steven Brault,Pittsburgh Pirates,SP,338,88.6,36.8,0.323,0.332,8,1002
 Brian Schlitter,Oakland Athletics,RP,41,87.4,29,0.35,0.254,2,1002
 Josh James,Houston Astros,RP,220,89.8,40.4,0.302,0.269,-8,1002
 Tim Collins,Chicago Cubs,RP,38,86.3,22.6,0.32,0.335,2,1002
-Adam Morgan,Philadelphia Phillies,RP,120,88,32.1,0.27,0.262,-32,1001
+Adam Morgan,Philadelphia Phillies,RP,120,88,32.1,0.27,0.262,-31,1002
 Danny Salazar,Cleveland Indians,SP,17,87.5,41.7,0.48,0.513,1,1001
-Ian Gibaut,Texas Rangers,SP,17,97.8,70,0.257,0.338,1,1001
-Pat Venditte,San Francisco Giants,SP,19,81.7,8.3,0.429,0.38,1,1001
-Sean Reid-Foley,Toronto Blue Jays,SP,139,88.2,34.1,0.323,0.317,5,1001
 Joey Lucchesi,San Diego Padres,SP,552,87.8,36.5,0.292,0.301,9,1001
-Fernando Abad,San Francisco Giants,SP,9,87.6,37.5,0.221,0.295,1,1001
+Pat Venditte,San Francisco Giants,SP,19,81.7,8.3,0.429,0.38,1,1001
 Adonis Rosa,New York Yankees,SP,7,92.7,20,0.285,0.331,1,1001
+Chris Sale,Boston Red Sox,SP,612,88.1,36.3,0.298,0.283,19,1000
 Josh D. Smith,Cleveland Indians,RP,43,87,38.1,0.349,0.275,0,1000
 Stefan Crichton,Arizona Diamondbacks,RP,81,87,39.3,0.264,0.31,12,1000
-Chris Sale,Boston Red Sox,SP,612,88.1,36.3,0.298,0.283,20,1000
+David McKay,Detroit Tigers,RP,52,90,34.5,0.302,0.354,-2,1000
 Sam Freeman,Los Angeles Angels,SP,11,90.3,44.4,0.466,0.572,0,1000
-Gio Gonzalez,Milwaukee Brewers,SP,223,87.4,37.3,0.317,0.348,-17,1000
-Alec Mills,Chicago Cubs,SP,89,88.3,36.2,0.362,0.402,-19,1000
 Tanner Roark,Oakland Athletics,SP,557,88.6,38.3,0.329,0.335,19,1000
+Alec Mills,Chicago Cubs,SP,89,88.3,36.2,0.362,0.402,-19,1000
+Taylor Guilbeau,Seattle Mariners,SP,9,94.1,50,0.416,0.384,-1,999
 Jose Rodriguez,Los Angeles Angels,NA,21,85.5,25,0.368,0.369,-1,999
 Jose Osuna,Pittsburgh Pirates,NA,7,91.1,28.6,0.41,0.413,-1,999
 Jose De Leon,Tampa Bay Rays,SP,10,82.1,0,0.254,0.328,-1,999
-Luke Jackson,Atlanta Braves,RP,250,87.3,33.6,0.323,0.276,-42,999
+Lucas Sims,Cincinnati Reds,RP,108,86.3,26.8,0.284,0.253,49,999
+Michael Brosseau,Tampa Bay Rays,NA,9,84.7,22.2,0.372,0.354,-1,999
+Tyler Webb,St. Louis Cardinals,RP,169,85.5,30.3,0.261,0.272,-11,998
 Kendrys Morales,Oakland Athletics,NA,7,89.9,0,0.425,0.466,-2,998
 Brandon Dixon,Detroit Tigers,NA,9,89.8,16.7,0.381,0.486,-2,998
-Andrew Miller,St. Louis Cardinals,RP,173,88.9,34.4,0.326,0.319,11,998
-Eduardo Jimenez,Detroit Tigers,RP,49,91.8,36.1,0.337,0.342,-3,997
 Jacob Waguespack,Toronto Blue Jays,SP,191,89.6,39.6,0.322,0.35,5,997
-Emmanuel Clase,Texas Rangers,RP,32,88.1,43.5,0.346,0.291,-3,997
+Eduardo Jimenez,Detroit Tigers,RP,49,91.8,36.1,0.337,0.342,-3,997
+Jimmy Cordero,Chicago White Sox,RP,65,84.2,27.5,0.299,0.281,51,997
 Sean Newcomb,Atlanta Braves,RP,237,86.9,29.5,0.313,0.316,-49,997
-Taylor Cole,Los Angeles Angels,RP,175,87.2,39.8,0.316,0.32,-87,997
-Tim Federowicz,Texas Rangers,NA,6,90.5,20,0.624,0.667,-3,997
 Shane Carle,Atlanta Braves,RP,49,90.3,38.7,0.462,0.466,-3,997
+Tim Federowicz,Texas Rangers,NA,6,90.5,20,0.624,0.667,-3,997
+Chaz Roe,Tampa Bay Rays,RP,184,87.3,32,0.314,0.302,33,997
+Alex Claudio,Milwaukee Brewers,RP,220,84.2,29.5,0.32,0.299,-0,997
 Lou Trivino,Oakland Athletics,RP,236,85,29.9,0.327,0.286,-5,996
 Reggie McClain,Seattle Mariners,SP,32,90.7,37.5,0.337,0.362,-4,996
-Domingo German,New York Yankees,SP,479,88.7,38,0.302,0.302,8,996
+Brett Anderson,Oakland Athletics,SP,607,88.9,40.3,0.312,0.345,-13,996
 Tom Murphy,Seattle Mariners,NA,11,95.6,50,0.175,0.318,-5,995
+Fernando Abad,San Francisco Giants,SP,16,91.1,50,0.32,0.336,-5,995
 Chris Davis,Baltimore Orioles,NA,5,99.3,75,0.646,0.652,-5,995
 Sean Gilmartin,Baltimore Orioles,SP,16,85.4,15.4,0.631,0.489,-5,995
-Taylor Guilbeau,Seattle Mariners,SP,5,91.3,40,0.574,0.436,-5,995
 Ryan Weber,Boston Red Sox,RP,135,87.4,32.1,0.323,0.298,-15,995
-Brett Anderson,Oakland Athletics,SP,607,88.9,40.3,0.312,0.345,-14,995
+Jose Alvarado,Tampa Bay Rays,RP,138,86.8,31.6,0.319,0.33,-76,995
+Jay Jackson,Milwaukee Brewers,RP,66,87.8,34.3,0.307,0.359,30,995
 Eduardo Nunez,Boston Red Sox,NA,4,97.4,50,0.498,0.403,-5,995
 Sam Selman,San Francisco Giants,SP,17,83.7,27.3,0.419,0.379,-5,995
-Aaron Altherr,Philadelphia Phillies,NA,5,95.5,66.7,0.422,0.297,-5,995
-Michael Brosseau,Tampa Bay Rays,NA,6,86.3,16.7,0.558,0.465,-5,995
 Dinelson Lamet,San Diego Padres,SP,176,86.6,31.4,0.308,0.302,3,995
+Aaron Altherr,Philadelphia Phillies,NA,5,95.5,66.7,0.422,0.297,-5,995
+Collin McHugh,Houston Astros,SP,307,87.8,29.7,0.312,0.3,53,994
+Ty Buttrey,Los Angeles Angels,RP,255,90.2,40.3,0.301,0.309,-44,994
 Jake Petricka,Milwaukee Brewers,RP,36,88.6,33.3,0.279,0.314,-6,994
-Colin Poche,Tampa Bay Rays,RP,139,89.1,38.7,0.279,0.234,37,994
+Colin Poche,Tampa Bay Rays,RP,139,89.1,38.7,0.279,0.234,36,994
 Sean Doolittle,Washington Nationals,RP,231,89.8,39.7,0.344,0.305,-70,994
 Rogelio Armenteros,Houston Astros,SP,75,86,28.8,0.269,0.276,-15,994
-Tyler Webb,St. Louis Cardinals,RP,168,85.5,30.3,0.262,0.274,-10,994
-Luis Perdomo,San Diego Padres,RP,208,90.3,45.8,0.285,0.31,45,993
+Darwinzon Hernandez,Boston Red Sox,RP,103,86.1,34.9,0.326,0.258,3,994
+Buddy Boshers,Toronto Blue Jays,RP,39,88.4,33.3,0.355,0.261,-6,994
+Kyle Crick,Pittsburgh Pirates,RP,205,84.6,25.9,0.333,0.299,-44,993
+Robert Stephenson,Cincinnati Reds,RP,206,87,26.7,0.28,0.252,23,993
+Craig Stammen,San Diego Padres,RP,271,86.8,31.9,0.321,0.287,-0,993
 Locke St. John,Texas Rangers,RP,28,89,47.4,0.325,0.293,-8,992
 Ryan Buchter,Oakland Athletics,RP,153,86.4,30.9,0.347,0.35,-3,992
-Scott Barlow,Kansas City Royals,RP,222,87.5,36,0.33,0.312,35,992
 Luis Cessa,New York Yankees,RP,273,88.3,34.3,0.325,0.295,0,992
 Masahiro Tanaka,New York Yankees,SP,602,88.8,37.9,0.318,0.311,50,992
 Austin Voth,Washington Nationals,SP,88,86.7,27.6,0.323,0.266,7,992
-Jose Alvarado,Tampa Bay Rays,RP,134,86.8,31.6,0.324,0.335,-87,991
+Junior Guerra,Milwaukee Brewers,SP,281,85.7,28.6,0.281,0.297,12,991
 Mark Reynolds,Colorado Rockies,NA,7,94.1,60,0.451,0.286,-10,990
-David McKay,Detroit Tigers,RP,46,90.3,37,0.342,0.4,-10,990
-Mike Freeman,Cleveland Indians,NA,8,84.1,25,0.404,0.275,-10,990
 Justin Anderson,Los Angeles Angels,RP,188,87.2,31.7,0.321,0.298,-35,990
-Jay Jackson,Milwaukee Brewers,RP,62,87.4,34.4,0.313,0.353,29,990
+Mike Freeman,Cleveland Indians,NA,8,84.1,25,0.404,0.275,-10,990
 Bryan Holaday,Miami Marlins,NA,1,84.4,0,0,0.105,-10,990
-Alex Claudio,Milwaukee Brewers,RP,219,84.2,29.5,0.321,0.3,-4,990
-Neil Ramirez,Toronto Blue Jays,RP,86,89.2,32.1,0.394,0.367,-24,989
+Yimi Garcia,Los Angeles Dodgers,RP,194,86.8,29,0.284,0.247,-9,990
+Jeremy Jeffress,Milwaukee Brewers,RP,221,86.4,36.4,0.321,0.331,-42,990
+Tim Hill,Kansas City Royals,RP,91,86.8,32.8,0.303,0.304,20,989
 Ryan Tepera,Toronto Blue Jays,RP,51,91.3,41.7,0.384,0.41,-17,989
+Trevor Bauer,Cincinnati Reds,SP,765,88.1,36.9,0.311,0.308,-39,989
 Chris Paddack,San Diego Padres,SP,466,86.8,31.9,0.274,0.285,-32,989
-Kyle Crick,Pittsburgh Pirates,RP,202,84.7,26.4,0.333,0.3,-48,989
-Lucas Sims,Cincinnati Reds,RP,101,86.5,28.8,0.304,0.267,31,989
-Jason Vargas,Philadelphia Phillies,SP,495,85.8,33,0.309,0.308,19,989
-Darwinzon Hernandez,Boston Red Sox,RP,100,85.8,34.1,0.336,0.261,-3,989
-Buddy Boshers,Toronto Blue Jays,RP,35,88.2,36.8,0.376,0.269,-11,989
-Anthony DeSclafani,Cincinnati Reds,SP,527,88.2,38.8,0.333,0.31,-19,988
-Robert Stephenson,Cincinnati Reds,RP,203,87,27.4,0.284,0.254,-12,988
+Michel Baez,San Diego Padres,RP,62,86.6,36.6,0.326,0.334,-23,989
+Jason Vargas,Philadelphia Phillies,SP,495,85.8,33,0.309,0.308,18,989
+Anthony DeSclafani,Cincinnati Reds,SP,527,88.2,38.8,0.333,0.31,-18,989
+Zack Wheeler,New York Mets,SP,634,87,33.6,0.298,0.304,-23,989
+Dakota Hudson,St. Louis Cardinals,SP,594,89.1,39.9,0.337,0.345,65,988
 Jesse Chavez,Texas Rangers,SP,337,87.7,34.5,0.335,0.341,-74,988
-Zack Wheeler,New York Mets,SP,634,87,33.6,0.298,0.303,-24,988
-Andrew Moore,Seattle Mariners,SP,20,95.4,41.2,0.445,0.357,-12,988
 Miles Mikolas,St. Louis Cardinals,SP,593,87.8,36.2,0.329,0.332,-55,988
+Andrew Moore,Seattle Mariners,SP,20,95.4,41.2,0.445,0.357,-12,988
 Adam Warren,San Diego Padres,RP,124,86.4,34.9,0.372,0.354,-25,988
-Kyle Gibson,Minnesota Twins,SP,570,88.1,37.9,0.313,0.325,-16,988
 Ryne Stanek,Miami Marlins,RP,253,89.9,40.3,0.294,0.314,-66,988
-Craig Stammen,San Diego Padres,RP,268,86.8,32,0.325,0.29,2,988
-Ty Buttrey,Los Angeles Angels,RP,247,90.4,40.9,0.304,0.312,-76,987
 Chasen Shreve,St. Louis Cardinals,SP,10,85.2,16.7,0.388,0.42,-13,987
+Scott Barlow,Kansas City Royals,RP,229,87.5,35.9,0.335,0.316,24,987
+Brad Peacock,Houston Astros,SP,359,89.9,41.5,0.304,0.294,-36,987
 Chris Mazza,New York Mets,SP,41,89.9,50,0.424,0.377,-13,987
-Marco Gonzales,Seattle Mariners,SP,656,88.5,36.1,0.319,0.316,3,987
+Adam Wainwright,St. Louis Cardinals,SP,547,88.2,39.4,0.331,0.322,28,987
 Matt Carasiti,Seattle Mariners,RP,43,89.7,35.7,0.373,0.305,-13,987
 Jesus Sucre,Baltimore Orioles,NA,3,88.7,0,0,0.097,-13,987
-Brady Lail,New York Yankees,SP,10,84.2,42.9,0.356,0.38,-13,987
 Jon Duplantier,Arizona Diamondbacks,RP,118,89.8,41.3,0.33,0.358,-19,987
+Brady Lail,New York Yankees,SP,10,84.2,42.9,0.356,0.38,-13,987
+Shane Greene,Atlanta Braves,RP,190,89.3,39.2,0.266,0.289,-48,987
 Cody Stashak,Minnesota Twins,RP,37,89.2,42.9,0.367,0.315,-13,987
-Adam Wainwright,St. Louis Cardinals,SP,547,88.2,39.4,0.331,0.322,29,987
 Stevie Wilkerson,Baltimore Orioles,NA,22,89.4,25,0.357,0.317,-13,987
-Collin McHugh,Houston Astros,SP,298,87.8,29.5,0.312,0.299,19,987
 Michael Blazek,Washington Nationals,SP,26,91,33.3,0.391,0.431,-13,987
 Julio Teheran,Atlanta Braves,SP,601,88.1,36.1,0.312,0.322,-62,986
 Zach Duke,Cincinnati Reds,RP,106,88.3,42.2,0.364,0.376,23,986
-Hanser Alberto,Baltimore Orioles,NA,7,92.9,50,0.585,0.594,-14,986
 Jarlin Garcia,Miami Marlins,RP,151,88.2,32.1,0.254,0.287,7,986
+Hanser Alberto,Baltimore Orioles,NA,7,92.9,50,0.585,0.594,-14,986
 Sandy Baez,Detroit Tigers,SP,5,79.2,20,0.422,0.167,-14,986
-Yimi Garcia,Los Angeles Dodgers,RP,191,86.9,29.5,0.289,0.248,-9,986
 Jeff Mathis,Texas Rangers,NA,9,90.8,50,0.416,0.394,-15,985
 Caleb Frare,Chicago White Sox,RP,14,91,28.6,0.402,0.423,-15,985
 Tony Watson,San Francisco Giants,RP,204,88.2,35.3,0.345,0.34,-56,985
+Carlos Estevez,Colorado Rockies,RP,250,90.9,41.6,0.332,0.319,17,985
 A.J. Minter,Atlanta Braves,RP,137,87,33.8,0.346,0.333,-36,985
-Carlos Estevez,Colorado Rockies,RP,250,90.9,41.6,0.332,0.319,18,985
-James Norwood,Chicago Cubs,SP,4,98.2,100,0.173,0.456,-15,985
 Tyler Chatwood,Chicago Cubs,RP,255,87.7,37.6,0.325,0.336,38,985
+James Norwood,Chicago Cubs,SP,4,98.2,100,0.173,0.456,-15,985
 Fernando Salas,Philadelphia Phillies,SP,15,94.4,58.3,0.565,0.314,-16,984
 Joe Mantiply,New York Yankees,SP,14,90.3,30,0.415,0.344,-16,984
-Jimmy Cordero,Chicago White Sox,RP,63,84.8,28.2,0.308,0.289,37,984
 Jimmy Herget,Cincinnati Reds,SP,16,86.8,33.3,0.511,0.446,-16,984
 Alex Reyes,St. Louis Cardinals,SP,17,90.2,50,0.412,0.455,-16,984
-Archie Bradley,Arizona Diamondbacks,RP,247,87.9,37.2,0.322,0.31,43,984
 Edinson Volquez,Texas Rangers,SP,39,92.6,60,0.442,0.428,-16,984
 Jake Diekman,Oakland Athletics,RP,221,87.9,34.5,0.309,0.304,7,984
-Josh Tomlin,Atlanta Braves,RP,264,87.8,32.7,0.315,0.32,-19,983
+Jose Cisnero,Detroit Tigers,RP,106,86.6,33.3,0.332,0.302,-19,984
+Josh Tomlin,Atlanta Braves,RP,264,87.8,32.7,0.315,0.32,-18,984
 Jose Quijada,Miami Marlins,RP,110,88.7,47.3,0.406,0.37,-17,983
 Justus Sheffield,Seattle Mariners,SP,14,97.4,42.9,0.402,0.403,-17,983
 Wei-Chieh Huang,Texas Rangers,SP,32,88.5,45.8,0.394,0.429,-17,983
 Victor Caratini,Chicago Cubs,NA,9,89.5,37.5,0.395,0.384,-17,983
+Brett Martin,Texas Rangers,RP,219,90.5,40.6,0.318,0.323,2,983
 Randy Rosario,Chicago Cubs,RP,49,92.2,35.3,0.352,0.336,-18,982
 Asher Wojciechowski,Baltimore Orioles,SP,210,88,38.2,0.338,0.344,23,982
 Brandon Brennan,Seattle Mariners,RP,154,88.1,35.8,0.293,0.31,-75,982
-Matt Albers,Milwaukee Brewers,RP,214,86.2,31.7,0.274,0.28,61,982
-Shane Greene,Atlanta Braves,RP,185,89.4,39,0.264,0.29,-46,982
-Tim Hill,Kansas City Royals,RP,90,86.9,33.3,0.306,0.307,14,981
 Dustin May,Los Angeles Dodgers,SP,79,86.8,42.4,0.312,0.357,-8,981
+Marco Gonzales,Seattle Mariners,SP,679,88.6,36.6,0.322,0.32,-8,981
 Wes Parsons,Atlanta Braves,RP,64,92.4,47.4,0.337,0.389,-21,980
 Zack Littell,Minnesota Twins,RP,101,92.9,55.6,0.317,0.38,37,980
 Daniel Mengden,Oakland Athletics,SP,244,88.7,35.4,0.317,0.335,-33,980
 Kenta Maeda,Los Angeles Dodgers,SP,522,85.3,29,0.284,0.277,-10,980
 Paul Fry,Baltimore Orioles,RP,200,88.5,36.9,0.32,0.317,-75,980
-Joe Harvey,New York Yankees,RP,48,88.8,44.8,0.361,0.336,-21,979
-T.J. McFarland,Arizona Diamondbacks,RP,211,87.3,40.9,0.341,0.337,-20,979
 Josh A. Smith,Boston Red Sox,RP,101,87.8,39.4,0.35,0.364,4,979
-Andrew Heaney,Los Angeles Angels,SP,241,89.2,39.2,0.32,0.312,13,979
+Joe Harvey,New York Yankees,RP,48,88.8,44.8,0.361,0.336,-21,979
+Matt Wisler,Seattle Mariners,RP,185,87.2,35.8,0.322,0.288,35,979
 Jairo Diaz,Colorado Rockies,RP,171,90.5,43.2,0.338,0.284,-37,979
-Brad Peacock,Houston Astros,SP,352,90,41.6,0.305,0.295,-37,979
 Erick Fedde,Washington Nationals,SP,305,88,40.7,0.351,0.372,7,979
 Wily Peralta,Kansas City Royals,RP,176,89.9,40.5,0.367,0.373,-47,979
 Luis Escobar,Pittsburgh Pirates,SP,29,88.2,45.5,0.502,0.444,-21,979
 Adam Plutko,Cleveland Indians,SP,295,88,29.7,0.343,0.328,-5,978
 Jose Manuel Fernandez,Detroit Tigers,NA,23,90,33.3,0.48,0.36,-22,978
-Jason Adam,Toronto Blue Jays,RP,28,89.2,31.6,0.216,0.294,-22,978
 Elvis Luciano,Toronto Blue Jays,RP,138,89.7,41.1,0.396,0.35,-22,978
-Yennsy Diaz,Toronto Blue Jays,SP,7,96.8,66.7,0.519,0.496,-23,977
+Jason Adam,Toronto Blue Jays,RP,28,89.2,31.6,0.216,0.294,-22,978
+Yennsy Diaz,Toronto Blue Jays,SP,7,96.8,66.7,0.519,0.496,-22,978
 Shawn Armstrong,Baltimore Orioles,RP,204,87.2,36.5,0.337,0.337,-22,977
 Josh Staumont,Kansas City Royals,RP,50,93,44.4,0.39,0.432,-23,977
 Alex Wilson,Milwaukee Brewers,RP,57,88.8,42.9,0.407,0.349,-58,977
-Michel Baez,San Diego Padres,RP,54,86.8,37.8,0.363,0.361,-27,976
 Ryan Garton,Seattle Mariners,SP,14,91.8,58.3,0.485,0.546,-24,976
 Hernan Perez,Milwaukee Brewers,NA,11,91.4,50,0.386,0.399,-24,976
 Trevor Kelley,Boston Red Sox,SP,6,96,75,0.467,0.384,-24,976
@@ -414,95 +414,94 @@ Ehire Adrianza,Minnesota Twins,NA,8,94.8,42.9,0.722,0.608,-24,976
 Luke Gregerson,St. Louis Cardinals,RP,27,90.3,33.3,0.409,0.307,-24,976
 Jerry Blevins,Atlanta Braves,RP,115,87.6,39.7,0.302,0.355,53,976
 John Schreiber,Detroit Tigers,SP,11,89.5,42.9,0.578,0.471,-24,976
-Scott Alexander,Los Angeles Dodgers,RP,76,90.3,37.3,0.311,0.351,-52,975
 Caleb Smith,Miami Marlins,SP,451,87.9,36.7,0.292,0.307,-24,975
-Matt Wisler,Seattle Mariners,RP,180,87.1,36.1,0.32,0.286,20,975
-Brett Martin,Texas Rangers,RP,215,90.6,41.1,0.324,0.329,10,974
-Jose Cisnero,Detroit Tigers,RP,98,87.8,35.5,0.344,0.307,-17,974
+Scott Alexander,Los Angeles Dodgers,RP,76,90.3,37.3,0.311,0.351,-52,975
+Archie Bradley,Arizona Diamondbacks,RP,255,88.1,37.5,0.324,0.313,22,975
 Drew Anderson,Philadelphia Phillies,SP,30,90.4,38.9,0.326,0.37,-26,974
+Ryne Harper,Minnesota Twins,RP,193,88,36.4,0.285,0.306,-25,974
+German Marquez,Colorado Rockies,SP,695,90.2,43.2,0.312,0.319,24,974
+Wilmer Font,Toronto Blue Jays,RP,267,89.9,38,0.334,0.303,57,974
 Brian Dozier,Washington Nationals,NA,5,88.2,40,0.646,0.328,-26,974
 Aaron Loup,San Diego Padres,SP,14,83.9,42.9,0.251,0.225,-26,974
-Wilmer Font,Toronto Blue Jays,RP,267,89.9,38,0.334,0.303,57,974
-German Marquez,Colorado Rockies,SP,695,90.2,43.2,0.312,0.319,23,973
-John Means,Baltimore Orioles,SP,441,87.5,32.4,0.312,0.309,-83,973
+Tyler Skaggs,Los Angeles Angels,SP,335,88.1,33.2,0.3,0.322,46,973
 Rookie Davis,Pittsburgh Pirates,SP,51,87.2,39.4,0.425,0.358,-27,973
 James Bourque,Washington Nationals,SP,6,102.1,100,0.788,0.569,-27,973
-Tyler Skaggs,Los Angeles Angels,SP,335,88.1,33.2,0.3,0.322,46,973
 Genesis Cabrera,St. Louis Cardinals,SP,59,85.2,29.3,0.379,0.384,-23,973
-Brendan McKay,Tampa Bay Rays,SP,146,89.6,41.2,0.346,0.319,-20,973
+Matt Magill,Seattle Mariners,RP,178,90,43.1,0.315,0.313,-26,973
+Jonathan Loaisiga,New York Yankees,SP,83,89.5,40.7,0.348,0.316,-14,973
 Phillip Diehl,Colorado Rockies,SP,12,92,42.9,0.532,0.51,-27,973
-Dan Jennings,Washington Nationals,RP,32,88.2,40,0.41,0.387,-27,973
 Austin Pruitt,Tampa Bay Rays,RP,113,85.8,33.3,0.328,0.308,10,973
-Sean Poppen,Minnesota Twins,SP,36,90.6,50,0.419,0.361,-28,972
+Dan Jennings,Washington Nationals,RP,32,88.2,40,0.41,0.387,-27,973
 Nathan Eovaldi,Boston Red Sox,RP,165,91.2,40.9,0.38,0.332,-11,972
-Chase De Jong,Minnesota Twins,SP,9,88.7,33.3,0.646,0.603,-28,972
+Sean Poppen,Minnesota Twins,SP,36,90.6,50,0.419,0.361,-28,972
 Jake Jewell,Los Angeles Angels,RP,66,88.1,41.3,0.363,0.332,-21,972
-Dillon Peters,Los Angeles Angels,RP,156,87.1,37.3,0.344,0.339,23,972
+Chase De Jong,Minnesota Twins,SP,9,88.7,33.3,0.646,0.603,-28,972
 Griffin Canning,Los Angeles Angels,SP,384,87,31.6,0.316,0.297,18,972
+Dillon Peters,Los Angeles Angels,RP,180,87.4,38.6,0.356,0.348,16,972
 Hunter Strickland,Washington Nationals,RP,40,88.1,36,0.257,0.292,-28,972
-Trevor Bauer,Cincinnati Reds,SP,738,88.1,37.5,0.314,0.312,-43,971
+Kyle Gibson,Minnesota Twins,SP,597,87.8,37.1,0.311,0.322,-7,971
 Chris Owings,Kansas City Royals,NA,12,95.7,63.6,0.711,0.596,-29,971
-Carlos Torres,Detroit Tigers,SP,29,87.8,21.1,0.41,0.34,-29,971
+Kevin McCarthy,Kansas City Royals,RP,190,89,40.8,0.349,0.329,-20,971
 Pedro Payano,Texas Rangers,SP,103,86.7,40,0.381,0.399,-60,971
+Carlos Torres,Detroit Tigers,SP,29,87.8,21.1,0.41,0.34,-29,971
 Seunghwan Oh,Colorado Rockies,RP,88,89.4,36.4,0.416,0.4,-77,971
-Ryne Harper,Minnesota Twins,RP,192,87.9,36,0.286,0.308,-28,971
-Francisco Liriano,Pittsburgh Pirates,RP,245,85.1,30,0.303,0.307,-6,971
 Kyle Zimmer,Kansas City Royals,RP,42,87.4,50,0.413,0.435,-30,970
+Neil Ramirez,Toronto Blue Jays,RP,93,89.4,33.3,0.405,0.372,-23,970
+Trey Wingenter,San Diego Padres,RP,185,89.5,38.4,0.283,0.293,-68,970
 Robert Stock,San Diego Padres,RP,56,91.6,40.6,0.389,0.357,-79,970
 Jeffrey Springs,Texas Rangers,RP,123,88,38,0.374,0.346,-41,970
 Jonny Venters,Washington Nationals,RP,49,96.1,58.3,0.456,0.428,-31,969
 Juan Minaya,Chicago White Sox,RP,126,89.6,42.2,0.365,0.307,-31,969
 Daniel Descalso,Chicago Cubs,NA,5,89.3,40,0.646,0.552,-31,969
 Chad Sobotka,Atlanta Braves,RP,117,89.8,31.3,0.338,0.322,-9,969
-Matt Magill,Seattle Mariners,RP,175,89.9,42.1,0.321,0.314,-29,968
+Evan Marshall,Chicago White Sox,RP,145,87.4,35,0.302,0.315,-17,968
 Blaine Hardy,Detroit Tigers,RP,182,84.8,29.3,0.313,0.332,-45,968
-Joe Jimenez,Detroit Tigers,RP,203,87.6,33.9,0.329,0.304,0,967
-Allen Webster,Chicago Cubs,RP,52,89.5,43.2,0.367,0.368,-4,967
-Stephen Nogosek,New York Mets,RP,34,89.5,30.8,0.436,0.384,-33,967
-Edgar Garcia,Philadelphia Phillies,RP,119,88.1,37.5,0.382,0.372,0,967
+Joe Jimenez,Detroit Tigers,RP,203,87.6,33.9,0.329,0.304,1,968
+Allen Webster,Chicago Cubs,RP,52,89.5,43.2,0.367,0.368,-3,968
 Colten Brewer,Boston Red Sox,RP,224,87.9,29.7,0.352,0.326,-27,967
+Edgar Garcia,Philadelphia Phillies,RP,119,88.1,37.5,0.382,0.372,0,967
+Stephen Nogosek,New York Mets,RP,34,89.5,30.8,0.436,0.384,-33,967
 Jose Urquidy,Houston Astros,SP,102,85.8,31.1,0.343,0.309,-18,967
+T.J. McFarland,Arizona Diamondbacks,RP,214,87.2,40.7,0.345,0.337,-29,967
 Jake Faria,Milwaukee Brewers,RP,62,87.1,41.5,0.384,0.341,-4,967
-Spencer Turnbull,Detroit Tigers,SP,487,88.9,38.7,0.313,0.322,12,966
-Reynaldo Lopez,Chicago White Sox,SP,626,89,39.6,0.355,0.346,5,966
 James Paxton,New York Yankees,SP,490,89.1,39.3,0.343,0.305,-9,966
-Kevin McCarthy,Kansas City Royals,RP,187,89,41.1,0.354,0.335,-17,966
 Deolis Guerra,Milwaukee Brewers,SP,6,86.2,16.7,0.77,0.487,-34,966
 Austin Romine,New York Yankees,NA,7,98,85.7,0.871,0.558,-34,966
 Dylan Moore,Seattle Mariners,NA,10,98,75,0.576,0.504,-34,966
+Richard Urena,Toronto Blue Jays,NA,8,84.8,14.3,0.709,0.393,-35,965
 Travis Bergen,San Francisco Giants,RP,85,90.9,45.6,0.341,0.386,-5,965
 Matt Moore,Detroit Tigers,SP,33,85.6,30.4,0.1,0.206,-35,965
 Gerardo Parra,Washington Nationals,NA,5,88.4,0,0.727,0.651,-35,965
 Williams Jerez,San Francisco Giants,RP,29,90.1,52.6,0.416,0.422,-35,965
-Trey Wingenter,San Diego Padres,RP,181,89.6,38.8,0.286,0.295,-68,965
 Jose Ruiz,Chicago White Sox,RP,159,86.6,29.6,0.388,0.357,2,965
 Miguel Diaz,San Diego Padres,RP,29,88.4,31.8,0.444,0.36,-36,964
 Dillon Tate,Baltimore Orioles,SP,28,88.1,41.2,0.421,0.36,-36,964
-Evan Marshall,Chicago White Sox,RP,142,87.7,34.7,0.309,0.311,-26,964
 Alex Wood,Cincinnati Reds,SP,107,88.3,35.4,0.41,0.357,-57,964
-Corbin Martin,Houston Astros,SP,92,90.3,45.9,0.426,0.35,-41,964
+Jesus Tinoco,Colorado Rockies,RP,90,89.7,41.9,0.335,0.347,-17,964
+Corbin Martin,Houston Astros,SP,92,90.3,45.9,0.426,0.35,-42,964
 Tim Peterson,New York Mets,RP,35,88.1,25,0.367,0.397,-37,963
-Mike Ford,New York Yankees,NA,12,91.4,36.4,0.654,0.463,-37,963
 Carl Edwards Jr.,San Diego Padres,RP,78,87.5,31.1,0.306,0.359,-27,963
-Kolby Allard,Texas Rangers,SP,45,90.1,38.5,0.275,0.253,-37,963
+Mike Ford,New York Yankees,NA,12,91.4,36.4,0.654,0.463,-37,963
 Ryan Feierabend,Toronto Blue Jays,SP,29,87.6,33.3,0.458,0.341,-37,963
-Alex Young,Arizona Diamondbacks,SP,176,86.7,30.2,0.284,0.305,-76,963
 Buck Farmer,Detroit Tigers,RP,223,88.6,41.8,0.318,0.318,-22,963
 Dan Winkler,Atlanta Braves,RP,93,89.7,35.6,0.342,0.355,-70,962
+Alex Young,Arizona Diamondbacks,SP,201,86.9,32.2,0.292,0.307,-42,962
 Josh Sborz,Los Angeles Dodgers,SP,17,91.5,21.4,0.519,0.478,-38,962
+Sandy Alcantara,Miami Marlins,SP,615,86.9,33.6,0.326,0.329,36,961
 Robert Dugger,Miami Marlins,SP,25,95.7,68.8,0.432,0.419,-39,961
 Cody Anderson,Cleveland Indians,SP,46,86.5,35.7,0.429,0.394,-39,961
+Domingo German,New York Yankees,SP,504,88.8,38.9,0.31,0.308,-19,961
 Jake Barrett,New York Yankees,SP,19,90.4,30.8,0.505,0.395,-39,961
-Sandy Alcantara,Miami Marlins,SP,615,86.9,33.6,0.326,0.329,37,961
 David Carpenter,Texas Rangers,SP,19,98.2,61.5,0.413,0.478,-39,961
+Mike Montgomery,Kansas City Royals,SP,244,90.3,45.8,0.374,0.374,64,961
 Daniel Zamora,New York Mets,RP,32,85.9,35.3,0.415,0.352,-39,961
 Peter Fairbanks,Tampa Bay Rays,RP,46,91,50,0.408,0.411,-39,961
-Mike Montgomery,Kansas City Royals,SP,244,90.3,45.8,0.374,0.374,65,961
-Corey Kluber,Cleveland Indians,SP,168,86,38.4,0.356,0.329,-30,960
-Edwin Diaz,New York Mets,RP,210,90.1,45.5,0.348,0.278,-29,960
+Corey Kluber,Cleveland Indians,SP,168,86,38.4,0.356,0.329,-29,961
+Joe Ross,Washington Nationals,RP,209,87.3,37.9,0.351,0.361,47,960
+Edwin Diaz,New York Mets,RP,210,90.1,45.5,0.348,0.278,-30,960
 Robby Scott,Arizona Diamondbacks,SP,18,75.9,20,0.381,0.271,-40,960
+Sam Gaviglio,Toronto Blue Jays,SP,326,88.1,35,0.313,0.307,26,959
 Ray Black,Milwaukee Brewers,SP,20,92.1,38.5,0.478,0.372,-41,959
-Sam Gaviglio,Toronto Blue Jays,SP,326,88.1,35,0.313,0.307,27,959
 Robbie Erlin,San Diego Padres,RP,188,88.7,39.2,0.335,0.354,-14,959
 Dan Otero,Cleveland Indians,RP,105,89.8,35.2,0.364,0.357,-43,959
 Brian Flynn,Kansas City Royals,RP,139,88,36.1,0.382,0.385,-51,959
@@ -510,208 +509,211 @@ Daniel Stumpf,Detroit Tigers,RP,124,90.4,46.5,0.365,0.336,4,959
 JC Ramirez,Los Angeles Angels,RP,34,90.1,46.4,0.343,0.36,-41,959
 Donnie Hart,New York Mets,SP,29,85.8,36.4,0.199,0.325,-41,959
 Dennis Santana,Los Angeles Dodgers,SP,27,86.4,26.7,0.417,0.364,-41,959
-Jonathan Loaisiga,New York Yankees,SP,74,89.6,42.9,0.36,0.319,-21,958
-Dario Agrazal,Pittsburgh Pirates,SP,179,87,28.2,0.356,0.335,-51,957
+Sean Reid-Foley,Toronto Blue Jays,SP,150,89.1,36.7,0.355,0.338,-30,958
+Gregory Soto,Detroit Tigers,RP,215,89.9,39.6,0.366,0.367,43,958
+Dario Agrazal,Pittsburgh Pirates,SP,179,87,28.2,0.356,0.335,-52,957
 Jon Lester,Chicago Cubs,SP,590,88.3,36,0.337,0.34,39,957
-Dakota Hudson,St. Louis Cardinals,SP,570,89.4,40.9,0.347,0.352,42,957
-Huascar Ynoa,Atlanta Braves,SP,16,91.1,50,0.486,0.374,-44,956
+Huascar Ynoa,Atlanta Braves,SP,16,91.1,50,0.486,0.374,-43,957
+Francisco Liriano,Pittsburgh Pirates,RP,251,85.4,31.1,0.314,0.314,-22,956
 Ranger Suarez,Philadelphia Phillies,RP,131,86.2,30.4,0.351,0.31,-5,956
 Nestor Cortes Jr.,New York Yankees,RP,221,87.1,31.4,0.33,0.334,-11,956
 Heath Fillmyer,Kansas City Royals,SP,72,93.6,50.9,0.416,0.416,-38,956
-Jalen Beeks,Tampa Bay Rays,SP,374,87,35,0.331,0.329,-20,955
 Ryan Borucki,Toronto Blue Jays,SP,40,93.8,53.6,0.542,0.457,-45,955
 Fernando Rodney,Washington Nationals,RP,141,87.6,39.8,0.357,0.326,8,955
 Dillon Maples,Chicago Cubs,RP,45,85.4,36.8,0.352,0.362,-45,955
-Austin Brice,Miami Marlins,RP,184,88,35.9,0.292,0.291,-9,955
 Adbert Alzolay,Chicago Cubs,SP,54,88.2,41.2,0.393,0.367,-48,955
 Brad Boxberger,Kansas City Royals,RP,122,85.3,33.8,0.329,0.311,-24,955
 Jefry Rodriguez,Cleveland Indians,SP,190,90.2,43.9,0.328,0.335,-21,954
 Mike Mayers,St. Louis Cardinals,RP,67,89.3,42.9,0.394,0.393,-42,954
-Jaime Schultz,Los Angeles Dodgers,SP,22,91.6,43.8,0.416,0.359,-46,954
 Jose Urena,Miami Marlins,SP,322,90.6,39.4,0.341,0.336,-46,954
+Jaime Schultz,Los Angeles Dodgers,SP,22,91.6,43.8,0.416,0.359,-46,954
+Nick Ramirez,Detroit Tigers,RP,269,86.3,29.7,0.318,0.312,-25,954
+Chase Anderson,Milwaukee Brewers,SP,460,86.5,33.1,0.324,0.315,-103,954
+John Means,Baltimore Orioles,SP,463,87.4,31.5,0.308,0.307,-85,954
 Conner Menez,San Francisco Giants,SP,54,85,25,0.377,0.36,-50,954
 Adrian Morejon,San Diego Padres,SP,42,90.5,50,0.44,0.398,-46,954
-Chase Anderson,Milwaukee Brewers,SP,460,86.5,33.1,0.324,0.315,-102,954
+Zach Davies,Milwaukee Brewers,SP,544,87.3,34.5,0.329,0.342,-23,953
 Tanner Anderson,Oakland Athletics,SP,105,88.6,43,0.345,0.35,-51,953
-Jesus Tinoco,Colorado Rockies,RP,87,89.8,42.4,0.347,0.351,-42,953
-Gregory Soto,Detroit Tigers,RP,212,89.9,40.1,0.371,0.371,46,953
-Jacob Rhame,New York Mets,RP,30,87.2,31.3,0.368,0.381,-47,953
-Hector Santiago,Chicago White Sox,SP,82,88.2,36.4,0.38,0.367,-6,953
+Tyler Kinley,Miami Marlins,RP,160,87.3,36,0.337,0.332,18,953
 Matt Strahm,San Diego Padres,SP,414,88.2,41,0.343,0.337,5,953
+DJ Johnson,Colorado Rockies,RP,66,91,41.5,0.36,0.378,-51,953
 Matt Grace,Washington Nationals,RP,202,90.1,46.2,0.381,0.374,-11,953
-Joe Ross,Washington Nationals,RP,196,86.8,37.3,0.359,0.369,60,953
+Jacob Rhame,New York Mets,RP,30,87.2,31.3,0.368,0.381,-47,953
+Jalen Beeks,Tampa Bay Rays,SP,396,87.1,34.2,0.33,0.329,-34,953
+Eric Lauer,San Diego Padres,SP,514,88.7,39.3,0.328,0.315,-1,952
 Chris Rusin,Colorado Rockies,SP,9,88.8,50,0.767,0.669,-48,952
 Taylor Hearn,Texas Rangers,SP,8,92.3,50,0.718,0.557,-48,952
-Tyler Kinley,Miami Marlins,RP,152,87.1,34.4,0.337,0.322,31,952
-Wade Davis,Colorado Rockies,RP,168,88.9,33,0.358,0.348,-33,952
 Kyle Bird,Texas Rangers,RP,65,88.9,30.6,0.415,0.411,-33,952
 Luis Ortiz,Baltimore Orioles,SP,18,93.4,44.4,0.53,0.497,-49,951
 David Price,Boston Red Sox,SP,450,88,38.6,0.324,0.31,-74,951
-Cionel Perez,Houston Astros,SP,36,94.6,50,0.4,0.373,-49,951
 Drew VerHagen,Detroit Tigers,RP,140,88.9,36.4,0.392,0.323,38,951
+Matt Albers,Milwaukee Brewers,RP,222,86.2,30.6,0.285,0.289,24,951
+Cionel Perez,Houston Astros,SP,36,94.6,50,0.4,0.373,-49,951
 Jordan Yamamoto,Miami Marlins,SP,262,90.1,40.9,0.271,0.309,17,951
 Bobby Poyner,Boston Red Sox,SP,23,91,52.9,0.572,0.502,-49,951
 Richard Bleier,Baltimore Orioles,RP,167,88.8,41.5,0.371,0.304,-21,950
-Chris Devenski,Houston Astros,RP,243,87.4,34.6,0.329,0.298,-37,949
+Chris Devenski,Houston Astros,RP,243,87.4,34.6,0.329,0.298,-37,950
 Enyel De Los Santos,Philadelphia Phillies,SP,46,86.2,31.3,0.42,0.396,-51,949
+Chi Chi Gonzalez,Colorado Rockies,SP,138,89.6,47.1,0.372,0.372,-35,949
 Thyago Vieira,Chicago White Sox,RP,37,87.6,29.2,0.363,0.387,-52,948
 Roman Quinn,Philadelphia Phillies,NA,19,93.8,60,0.437,0.477,-52,948
-Zach Davies,Milwaukee Brewers,SP,524,87.6,35,0.334,0.346,-67,948
-Victor Alcantara,Detroit Tigers,RP,168,90.5,42.7,0.364,0.377,-64,948
+Victor Alcantara,Detroit Tigers,RP,168,90.5,42.7,0.364,0.377,-65,948
 Mike Shawaryn,Boston Red Sox,RP,60,92,33.3,0.405,0.37,-56,948
-DJ Johnson,Colorado Rockies,RP,62,90.4,38.5,0.37,0.386,-50,948
-Nick Ramirez,Detroit Tigers,RP,264,86.3,29.5,0.318,0.314,-54,948
 Tyler Bashlor,New York Mets,RP,75,89,41.3,0.37,0.364,-61,948
 Nick Burdi,Pittsburgh Pirates,RP,39,88.1,40,0.347,0.235,-53,947
-Jimmy Nelson,Milwaukee Brewers,SP,73,85.5,34.9,0.428,0.383,-26,947
+Caleb Ferguson,Los Angeles Dodgers,RP,143,86.8,35.4,0.374,0.36,-26,947
 Greg Holland,Arizona Diamondbacks,RP,152,89.3,36.8,0.299,0.292,-76,947
+Jimmy Nelson,Milwaukee Brewers,SP,73,85.5,34.9,0.428,0.383,-26,947
+Vince Velasquez,Philadelphia Phillies,SP,380,89.3,40.2,0.341,0.33,22,947
 Bryse Wilson,Atlanta Braves,SP,85,89.8,45.8,0.404,0.348,-4,947
-Kyle Wright,Atlanta Braves,SP,82,90.8,48.1,0.439,0.426,-69,946
+Kyle Wright,Atlanta Braves,SP,82,90.8,48.1,0.439,0.426,-68,947
 Nick Rumbelow,Seattle Mariners,SP,9,97.9,50,0.617,0.668,-54,946
-Vince Velasquez,Philadelphia Phillies,SP,380,89.3,40.2,0.341,0.33,22,946
 Matthew Boyd,Detroit Tigers,SP,640,88,33.5,0.31,0.288,-13,946
 Felix Pena,Los Angeles Angels,SP,407,88.7,36.8,0.301,0.327,10,946
-Luis Garcia,Los Angeles Angels,RP,216,87.6,34.7,0.343,0.35,-22,946
+Steven Matz,New York Mets,SP,527,88.5,40.6,0.328,0.33,30,945
 Dereck Rodriguez,San Francisco Giants,SP,312,89.5,36.7,0.329,0.349,1,945
 Stephen Tarpley,New York Yankees,RP,98,90.1,45.8,0.423,0.371,-15,945
 Reymin Guduan,Houston Astros,RP,27,97.3,58.8,0.499,0.514,-55,945
-Dan Altavilla,Seattle Mariners,RP,29,83,21.4,0.354,0.311,-56,944
-Javy Guerra,Toronto Blue Jays,RP,222,89,39.1,0.32,0.31,-56,944
-Chi Chi Gonzalez,Colorado Rockies,SP,116,89.1,47.1,0.402,0.371,-38,944
+Javy Guerra,Toronto Blue Jays,RP,232,89.1,38.2,0.306,0.306,-55,945
+Dan Altavilla,Seattle Mariners,RP,29,83,21.4,0.354,0.311,-55,945
 Ben Lively,Kansas City Royals,SP,6,88,40,0.624,0.645,-56,944
 Tyler Olson,Cleveland Indians,RP,140,84.5,24.5,0.346,0.3,-12,944
 Carlos Rodon,Chicago White Sox,SP,158,89.3,39.4,0.31,0.289,-48,944
 Austin Adams,Detroit Tigers,RP,80,91.7,47.2,0.384,0.371,-12,943
-Parker Markel,Pittsburgh Pirates,RP,42,86.9,21.4,0.463,0.409,-57,943
+Dylan Bundy,Baltimore Orioles,SP,546,88.3,32.1,0.337,0.31,21,943
+Austin Brice,Miami Marlins,RP,192,87.7,35.5,0.296,0.292,-44,943
+J.A. Happ,New York Yankees,SP,534,89,37.6,0.349,0.332,-38,943
 Jeurys Familia,New York Mets,RP,194,87.6,34.2,0.374,0.32,6,943
-J.A. Happ,New York Yankees,SP,534,89,37.6,0.349,0.332,-37,943
-Kelvin Herrera,Chicago White Sox,RP,168,85.9,34.7,0.363,0.334,-26,943
-Caleb Ferguson,Los Angeles Dodgers,RP,139,86.8,36.3,0.38,0.359,-26,943
+Parker Markel,Pittsburgh Pirates,RP,42,86.9,21.4,0.463,0.409,-57,943
+Hoby Milner,Tampa Bay Rays,SP,9,77.7,0,0.351,0.267,-57,943
 A.J. Cole,Cleveland Indians,RP,118,85.7,22.5,0.345,0.281,18,943
+Wade Davis,Colorado Rockies,RP,173,89,33.3,0.369,0.353,-53,943
 Brooks Pounders,New York Mets,RP,34,87.8,46.2,0.368,0.357,-58,942
 Josh Lucas,Baltimore Orioles,RP,69,88.5,37,0.29,0.297,-2,942
 Alex Cobb,Baltimore Orioles,SP,60,94.9,60,0.527,0.55,-70,942
 Drew Steckenrider,Miami Marlins,RP,58,89.1,36.8,0.323,0.352,-36,942
-Brian Johnson,Boston Red Sox,RP,110,89.1,37.3,0.413,0.336,-6,942
 Daniel Norris,Detroit Tigers,SP,531,90.6,43,0.352,0.344,-17,942
 Fernando Romero,Minnesota Twins,RP,40,88.3,38.5,0.441,0.42,-58,942
+Luke Bard,Los Angeles Angels,RP,147,87.4,28.6,0.333,0.342,-16,941
 Ryan Burr,Chicago White Sox,RP,86,90.5,36.2,0.3,0.289,10,941
 Jeremy Hellickson,Washington Nationals,SP,183,86,35.6,0.379,0.383,-17,941
 Matt Bowman,Cincinnati Reds,RP,97,84.4,29,0.318,0.277,-63,941
-Jake McGee,Colorado Rockies,RP,136,88.5,37.1,0.354,0.306,2,940
-Joe Palumbo,Texas Rangers,SP,44,90,40.6,0.466,0.389,-60,940
-Steven Matz,New York Mets,SP,500,88.5,40.7,0.331,0.334,16,940
+Luis Garcia,Los Angeles Angels,RP,220,87.6,34.2,0.345,0.349,-34,940
+Homer Bailey,Oakland Athletics,SP,556,89.9,38.1,0.322,0.33,52,939
 Zac Rosscup,Los Angeles Dodgers,RP,94,85.4,32.6,0.38,0.314,-59,939
-Eric Lauer,San Diego Padres,SP,496,88.8,39.5,0.327,0.313,-10,939
-Andrew Cashner,Boston Red Sox,SP,551,89.5,41.2,0.322,0.35,-46,937
+Jaime Barria,Los Angeles Angels,RP,251,89,39.9,0.378,0.347,-10,938
+Andrew Cashner,Boston Red Sox,SP,551,89.5,41.2,0.322,0.35,-46,938
 Austen Williams,Washington Nationals,SP,7,94.7,40,1.146,0.619,-63,937
 Tanner Scott,Baltimore Orioles,RP,84,93,45.5,0.417,0.382,3,936
 Ryan Dull,Oakland Athletics,RP,51,89.9,45.7,0.535,0.476,-75,936
+Reynaldo Lopez,Chicago White Sox,SP,652,89.1,38.8,0.354,0.343,-53,936
 Dylan Cease,Chicago White Sox,SP,199,88.9,39.3,0.371,0.338,-10,936
 Kyle Dowdy,Texas Rangers,RP,110,90,40.5,0.381,0.396,-64,936
-Martin Perez,Minnesota Twins,SP,586,85,29.6,0.326,0.295,34,935
-Tyler Mahle,Cincinnati Reds,SP,437,89.3,39.7,0.33,0.315,-60,933
+Spencer Turnbull,Detroit Tigers,SP,505,89,39.5,0.324,0.325,-38,936
+Martin Perez,Minnesota Twins,SP,586,85,29.6,0.328,0.297,34,935
+Tyler Mahle,Cincinnati Reds,SP,437,89.3,39.7,0.33,0.315,-60,934
 Jonathan Holder,New York Yankees,RP,181,88.2,34.2,0.323,0.298,-85,933
-Richard Lovelady,Kansas City Royals,RP,86,86.5,33.9,0.383,0.288,-81,933
+Brian Johnson,Boston Red Sox,RP,128,89.2,38.9,0.412,0.335,-26,933
 Tyler White,Houston Astros,NA,22,92.7,46.7,0.688,0.438,-67,933
 Mike Dunn,Colorado Rockies,RP,75,86.2,35.2,0.337,0.293,-34,932
-Roenis Elias,Washington Nationals,RP,205,87.8,36.1,0.291,0.317,-61,931
+Roenis Elias,Washington Nationals,RP,205,87.8,36.1,0.291,0.317,-60,932
+Derek Law,Toronto Blue Jays,RP,210,89.4,41.7,0.336,0.325,78,931
 Brad Brach,New York Mets,RP,194,89.1,37.9,0.341,0.333,-18,931
 Matt Wotherspoon,Baltimore Orioles,SP,26,86.7,28.6,0.517,0.542,-69,931
 Matt Festa,Seattle Mariners,RP,101,87.2,39,0.36,0.342,-39,930
 Juan Nicasio,Philadelphia Phillies,RP,209,88.8,40.3,0.339,0.346,22,930
+Kolby Allard,Texas Rangers,SP,69,88,38.6,0.324,0.291,-17,930
 CC Sabathia,New York Yankees,SP,405,86.8,31.4,0.363,0.317,-70,929
-Montana DuRapau,Pittsburgh Pirates,RP,72,90.8,34.8,0.387,0.353,-89,929
+Touki Toussaint,Atlanta Braves,RP,198,87.1,32.5,0.355,0.316,-46,929
 Hector Noesi,Miami Marlins,SP,67,90.2,37.8,0.392,0.36,-46,929
 R.J. Alaniz,Cincinnati Reds,SP,28,93.4,61.1,0.576,0.46,-71,929
-Touki Toussaint,Atlanta Braves,RP,198,87.1,32.5,0.355,0.316,-46,929
-Brad Wieck,San Diego Padres,RP,110,91,44.9,0.361,0.338,-32,929
 Robert Gsellman,New York Mets,RP,278,85.3,31.2,0.329,0.292,26,929
-Derek Law,Toronto Blue Jays,RP,207,89.5,42.4,0.337,0.326,82,929
-Luke Bard,Los Angeles Angels,RP,139,87.3,27.3,0.335,0.341,-77,928
-Tommy Milone,Seattle Mariners,SP,318,86.3,32.6,0.328,0.328,-33,928
+Richard Lovelady,Kansas City Royals,RP,92,86.6,32.4,0.387,0.287,-75,929
+Hector Santiago,Chicago White Sox,SP,87,89.1,40.7,0.419,0.382,-12,929
+Brad Wieck,San Diego Padres,RP,110,91,44.9,0.361,0.338,-32,929
 JT Chargois,Los Angeles Dodgers,RP,88,89.1,35.8,0.331,0.279,-32,928
 Pedro Araujo,Baltimore Orioles,SP,4,100.7,66.7,0.89,0.737,-72,928
-Brady Rodgers,Houston Astros,SP,25,89.6,50,0.521,0.499,-73,927
-Hector Velazquez,Boston Red Sox,RP,209,88.6,37.7,0.339,0.345,-46,927
+Brady Rodgers,Houston Astros,SP,25,89.6,50,0.521,0.499,-72,928
+Hector Velazquez,Boston Red Sox,RP,209,88.6,37.7,0.339,0.345,-45,928
 John Ryan Murphy,Arizona Diamondbacks,NA,22,88.5,42.1,0.693,0.562,-73,927
 Wandy Peralta,Cincinnati Reds,RP,137,85.6,36.6,0.326,0.363,-29,927
 Tyler Alexander,Detroit Tigers,SP,127,90.2,38.8,0.381,0.34,-65,927
 Brock Stewart,Toronto Blue Jays,SP,58,87.7,22.7,0.41,0.354,-16,926
-Jaime Barria,Los Angeles Angels,RP,230,89.2,38.9,0.384,0.339,-35,925
+Jake McGee,Colorado Rockies,RP,138,88.7,37.4,0.36,0.311,-8,926
+Matt Hall,Detroit Tigers,RP,42,84.5,25,0.361,0.338,-74,926
+Clay Holmes,Pittsburgh Pirates,RP,187,87.6,38.7,0.332,0.33,-26,925
+Joe Palumbo,Texas Rangers,SP,54,90.4,39.5,0.475,0.41,-77,925
 Nick Vincent,San Francisco Giants,RP,138,89.9,38.5,0.356,0.335,-94,924
+Danny Duffy,Kansas City Royals,SP,434,89.1,36.4,0.348,0.343,-50,924
 Cody Allen,Los Angeles Angels,RP,116,94.3,54.5,0.415,0.412,-37,924
 Trevor Rosenthal,Detroit Tigers,RP,85,85.4,34.2,0.367,0.411,-11,924
-Danny Duffy,Kansas City Royals,SP,434,89.1,36.4,0.348,0.343,-50,924
 Josh Osich,Chicago White Sox,RP,203,88,37.1,0.347,0.331,-50,924
 Dominic Leone,St. Louis Cardinals,RP,129,90,38,0.361,0.366,9,924
 Yefry Ramirez,Pittsburgh Pirates,SP,68,90.8,41.5,0.427,0.412,-30,923
-Matt Hall,Detroit Tigers,RP,31,83.3,29.4,0.329,0.282,-77,923
-Erasmo Ramirez,Boston Red Sox,SP,15,87.3,25,0.536,0.528,-79,921
+Tanner Rainey,Washington Nationals,RP,143,90.1,51.5,0.305,0.337,24,923
+Chris Archer,Pittsburgh Pirates,SP,526,88,39.5,0.338,0.346,13,923
 Branden Kline,Baltimore Orioles,RP,147,91.1,53.9,0.378,0.396,-56,921
+Erasmo Ramirez,Boston Red Sox,SP,15,87.3,25,0.536,0.528,-79,921
 Tyler Thornburg,Boston Red Sox,RP,86,92.4,56.6,0.404,0.389,-30,921
 Reed Garrett,Detroit Tigers,RP,77,94.7,49.1,0.48,0.441,-84,921
-Mike Foltynewicz,Atlanta Braves,SP,335,88,39.2,0.368,0.351,2,920
+Mike Foltynewicz,Atlanta Braves,SP,335,88,39.2,0.368,0.351,3,921
 Gerardo Reyes,San Diego Padres,RP,77,87,29.3,0.353,0.295,-37,920
 Logan Allen,Cleveland Indians,SP,127,91.6,52.1,0.405,0.406,-47,920
-Jacob Barnes,Kansas City Royals,RP,107,88.9,36.6,0.34,0.34,-8,920
-Homer Bailey,Oakland Athletics,SP,532,89.7,37.9,0.323,0.331,21,920
-Rick Porcello,Boston Red Sox,SP,616,88.1,36.6,0.341,0.33,7,919
-Framber Valdez,Houston Astros,RP,229,89.4,41,0.34,0.327,-119,919
+Rick Porcello,Boston Red Sox,SP,616,88.1,36.6,0.341,0.33,8,920
+Framber Valdez,Houston Astros,RP,229,89.4,41,0.34,0.327,-118,920
 Peter Lambert,Colorado Rockies,SP,298,88.8,40.9,0.375,0.338,-14,919
-Tanner Rainey,Washington Nationals,RP,138,90.4,52.4,0.304,0.333,24,918
-Chris Archer,Pittsburgh Pirates,SP,521,88,39.3,0.338,0.346,9,916
+Brendan McKay,Tampa Bay Rays,SP,159,89.4,41.5,0.361,0.331,-80,919
 Tom Eshelman,Baltimore Orioles,RP,164,90.5,41.5,0.395,0.378,-31,916
 Aaron Wilkerson,Milwaukee Brewers,RP,80,86.4,28.3,0.422,0.313,-34,916
-Bryan Shaw,Colorado Rockies,RP,258,89.9,40.3,0.329,0.332,-3,916
-Trent Thornton,Toronto Blue Jays,SP,534,87.7,36.7,0.34,0.333,-9,916
+Trent Thornton,Toronto Blue Jays,SP,534,87.7,36.7,0.34,0.333,-10,916
 Nick Pivetta,Philadelphia Phillies,SP,385,88.7,34.8,0.363,0.348,-30,916
-Jhoulys Chacin,Milwaukee Brewers,SP,403,88.1,42.8,0.363,0.351,-58,915
-Dylan Bundy,Baltimore Orioles,SP,520,88.4,32.8,0.343,0.313,12,915
+Jhoulys Chacin,Milwaukee Brewers,SP,403,88.1,42.8,0.363,0.351,-57,916
 Thomas Pannone,Toronto Blue Jays,SP,291,89.4,39.6,0.335,0.346,-42,915
 Joe Musgrove,Pittsburgh Pirates,SP,579,88.9,39.3,0.318,0.314,7,914
+Tommy Milone,Seattle Mariners,SP,340,86.5,31.5,0.324,0.327,-55,914
+Michael Wacha,St. Louis Cardinals,SP,441,87.3,35.4,0.371,0.361,29,914
 Paul Blackburn,Oakland Athletics,SP,18,85.8,50,0.46,0.521,-87,913
 Chance Adams,New York Yankees,RP,103,88.2,32,0.411,0.354,-71,912
 Matt Koch,Arizona Diamondbacks,RP,96,91.3,48.7,0.454,0.435,20,912
 Jeff Brigham,Miami Marlins,RP,96,89.3,41,0.378,0.345,-37,911
-Clay Holmes,Pittsburgh Pirates,RP,172,88.1,40.4,0.336,0.325,-52,911
 Walker Lockett,New York Mets,SP,77,88.3,32.8,0.396,0.348,14,911
 Chris Flexen,New York Mets,RP,67,89.4,45.5,0.35,0.338,10,911
 Austin Davis,Philadelphia Phillies,RP,62,89.6,41.2,0.449,0.399,-43,911
-Manny Banuelos,Chicago White Sox,RP,211,88.3,39.4,0.4,0.37,14,910
+Montana DuRapau,Pittsburgh Pirates,RP,84,90.9,36.5,0.403,0.349,-88,911
+Manny Banuelos,Chicago White Sox,RP,211,88.3,39.4,0.4,0.37,13,910
 Mitch Keller,Pittsburgh Pirates,SP,105,88.6,38.6,0.414,0.35,-7,910
-Shaun Anderson,San Francisco Giants,SP,368,86.7,37.9,0.353,0.36,-38,908
+Kyle McGowin,Washington Nationals,RP,76,91,47.2,0.417,0.39,-48,910
+Shaun Anderson,San Francisco Giants,SP,368,86.7,37.9,0.353,0.36,-37,909
+Adalberto Mejia,Los Angeles Angels,RP,123,91.4,48.1,0.383,0.4,-57,908
 Ross Detwiler,Chicago White Sox,RP,187,89.3,39,0.412,0.386,-26,908
-Adam Conley,Miami Marlins,RP,229,88.2,39.5,0.39,0.357,6,907
+Kelvin Herrera,Chicago White Sox,RP,175,86.5,36.6,0.378,0.344,-70,908
+Adam Conley,Miami Marlins,RP,229,88.2,39.5,0.39,0.357,5,907
 Glenn Sparkman,Kansas City Royals,SP,457,90.9,43.1,0.354,0.354,14,906
-Adalberto Mejia,Los Angeles Angels,RP,121,91.5,48.7,0.389,0.406,-55,905
-Kyle McGowin,Washington Nationals,RP,72,90.6,46,0.431,0.389,-58,905
+Elieser Hernandez,Miami Marlins,RP,249,85.3,32.5,0.362,0.304,-5,906
+Andrew Kittredge,Tampa Bay Rays,RP,136,87.7,35.3,0.317,0.283,-12,905
+Drew Pomeranz,Milwaukee Brewers,SP,389,88.9,36.5,0.369,0.336,41,904
 Freddy Peralta,Milwaukee Brewers,SP,344,89,39.6,0.353,0.32,-63,903
 Jeanmar Gomez,Texas Rangers,RP,73,90.4,33.9,0.407,0.364,-66,901
+Paul Sewald,New York Mets,RP,32,89.5,45.5,0.31,0.33,-99,901
 Derek Holland,Chicago Cubs,SP,336,89,41.5,0.352,0.346,0,901
-Trevor Richards,Tampa Bay Rays,SP,501,87,35.5,0.331,0.321,-26,900
-Drew Pomeranz,Milwaukee Brewers,SP,383,88.9,36.7,0.37,0.335,44,900
+Trevor Richards,Tampa Bay Rays,SP,501,87,35.5,0.331,0.321,-25,901
 Merrill Kelly,Arizona Diamondbacks,SP,606,89,39.2,0.328,0.349,-1,900
-Andrew Kittredge,Tampa Bay Rays,RP,130,87.8,36.6,0.312,0.278,-18,900
 Tyson Ross,Detroit Tigers,SP,162,89.2,43.2,0.368,0.388,-82,899
 Jerad Eickhoff,Philadelphia Phillies,SP,245,87.8,39.1,0.369,0.345,-107,899
 Josh Rogers,Baltimore Orioles,RP,69,92.6,50,0.459,0.449,-26,899
 Matt Andriese,Arizona Diamondbacks,RP,236,88.2,32.7,0.332,0.289,11,898
 Chad Bettis,Colorado Rockies,RP,287,89.6,41.1,0.365,0.324,-16,898
 Yacksel Rios,Philadelphia Phillies,SP,19,83.3,38.5,0.611,0.521,-102,898
-Phil Maton,Cleveland Indians,RP,129,85.8,27.6,0.376,0.323,-22,897
-Paul Sewald,New York Mets,SP,28,89.6,47.6,0.31,0.358,-103,897
-Trevor Williams,Pittsburgh Pirates,SP,457,87.7,36.7,0.348,0.344,-50,896
-Jake Arrieta,Philadelphia Phillies,SP,594,88.7,37.3,0.342,0.336,-29,896
+Jacob Barnes,Kansas City Royals,RP,113,88.9,36,0.352,0.343,-37,898
+Jake Arrieta,Philadelphia Phillies,SP,594,88.7,37.3,0.342,0.336,-30,896
+Kyle Freeland,Colorado Rockies,SP,452,89,40.1,0.379,0.361,7,895
 Tyler Lyons,Pittsburgh Pirates,SP,20,85.5,41.7,0.465,0.414,-107,893
+Phil Maton,Cleveland Indians,RP,134,85.6,27.7,0.376,0.323,-8,893
 Taylor Clarke,Arizona Diamondbacks,SP,288,89.9,41.1,0.381,0.375,-17,892
 Jose Suarez,Los Angeles Angels,SP,249,86.5,34.1,0.395,0.335,-53,892
-Elieser Hernandez,Miami Marlins,RP,231,85.2,31.8,0.357,0.303,-22,892
-Michael Wacha,St. Louis Cardinals,SP,425,87.4,35.2,0.377,0.364,-3,891
-Kyle Freeland,Colorado Rockies,SP,428,89.4,40.6,0.386,0.363,-6,891
+Andrew Suarez,San Francisco Giants,RP,111,90.8,40.7,0.431,0.402,-3,892
 Jordan Lyles,Milwaukee Brewers,SP,448,89.2,41.4,0.346,0.322,-10,891
 Matt Harvey,Los Angeles Angels,SP,266,90.3,41.6,0.372,0.39,-11,891
-Andrew Suarez,San Francisco Giants,RP,102,90.6,41.9,0.446,0.409,-26,890
 Gerson Bautista,Seattle Mariners,RP,49,90.8,42.4,0.433,0.395,-113,887
 Alex McRae,Pittsburgh Pirates,RP,79,89.1,42.2,0.44,0.359,-86,887
 Zach Eflin,Philadelphia Phillies,SP,536,87.2,34.8,0.339,0.318,-11,886
@@ -720,50 +722,52 @@ Nick Tropeano,Los Angeles Angels,SP,66,90.1,39.6,0.436,0.415,-81,886
 Cole Irvin,Philadelphia Phillies,RP,136,85.9,32.7,0.381,0.376,-73,885
 Taylor Williams,Milwaukee Brewers,RP,60,91.8,52.4,0.411,0.378,-100,884
 Ty Blach,Baltimore Orioles,SP,81,88.7,36.8,0.452,0.372,-45,883
-Mike Leake,Arizona Diamondbacks,SP,656,91.1,44.1,0.354,0.355,-55,882
+Mike Leake,Arizona Diamondbacks,SP,656,91.1,44.1,0.354,0.355,-56,882
+Erik Swanson,Seattle Mariners,RP,192,90.8,41,0.362,0.363,-1,882
 Wade LeBlanc,Seattle Mariners,SP,457,89.4,39.3,0.355,0.343,-7,880
 Sal Romano,Cincinnati Reds,SP,36,90.3,32.1,0.51,0.384,-121,879
 Dovydas Neverauskas,Pittsburgh Pirates,RP,53,92.7,50,0.444,0.432,-56,879
 Trevor Hildenberger,Minnesota Twins,RP,71,90.6,41.2,0.406,0.345,-38,878
+Gabriel Ynoa,Baltimore Orioles,SP,370,90.1,41.1,0.354,0.36,-49,878
 Jeff Hoffman,Colorado Rockies,SP,187,88.2,39.5,0.407,0.377,-52,876
+Chris Stratton,Pittsburgh Pirates,RP,297,87.9,33.3,0.359,0.311,33,876
+Bryan Shaw,Colorado Rockies,RP,264,90,40.5,0.339,0.336,-51,876
 Antonio Senzatela,Colorado Rockies,SP,430,88.8,43.8,0.369,0.361,-132,875
-Yusei Kikuchi,Seattle Mariners,SP,592,88.4,37.2,0.361,0.335,28,874
-Zac Reininger,Detroit Tigers,RP,100,91,40.7,0.489,0.452,-26,873
+Yusei Kikuchi,Seattle Mariners,SP,592,88.4,37.2,0.361,0.335,29,875
+Zac Reininger,Detroit Tigers,RP,100,91,40.7,0.489,0.452,-25,874
 Drew Smyly,Philadelphia Phillies,SP,368,88.9,39.8,0.395,0.375,-36,873
 Kyle Barraclough,Washington Nationals,RP,124,90.9,43.8,0.393,0.38,-72,872
-Kevin Gausman,Cincinnati Reds,SP,387,86.8,35.3,0.339,0.329,2,871
-Erik Swanson,Seattle Mariners,RP,185,90.9,41.7,0.372,0.363,-50,871
+Kevin Gausman,Cincinnati Reds,SP,387,86.8,35.3,0.339,0.329,3,872
 Drew Gagnon,New York Mets,RP,111,87.7,35.8,0.429,0.397,-120,871
-Chris Stratton,Pittsburgh Pirates,RP,294,88,33.7,0.36,0.312,32,870
-Gabriel Ynoa,Baltimore Orioles,SP,362,90.2,41.3,0.351,0.36,-45,870
 Corey Oswalt,New York Mets,SP,34,86.5,26.1,0.421,0.378,-130,870
-Dylan Covey,Chicago White Sox,RP,243,88.8,38.8,0.361,0.4,-63,868
-Ariel Jurado,Texas Rangers,SP,439,89,43.2,0.359,0.359,-98,865
+Dylan Covey,Chicago White Sox,RP,243,88.8,38.8,0.361,0.4,-62,869
+Ariel Jurado,Texas Rangers,SP,439,89,43.2,0.359,0.359,-97,866
 Nick Kingham,Toronto Blue Jays,RP,259,86.6,34,0.421,0.355,57,865
 Jesse Biddle,Texas Rangers,RP,152,89.3,43.8,0.414,0.42,-51,865
-Tyler Beede,San Francisco Giants,SP,380,91.1,45,0.363,0.351,-32,864
 Geoff Hartlieb,Pittsburgh Pirates,RP,125,90.9,44,0.431,0.361,-43,864
 Marco Estrada,Oakland Athletics,SP,106,86.9,29.2,0.359,0.323,-75,864
 Trevor Cahill,Los Angeles Angels,SP,384,89.1,39.8,0.376,0.351,-28,863
 Tyler Anderson,Colorado Rockies,SP,106,87.6,36.1,0.471,0.413,-61,863
+Tyler Beede,San Francisco Giants,SP,401,91.1,45.2,0.371,0.357,-20,862
 Ervin Santana,Chicago White Sox,SP,64,89.2,39.6,0.479,0.451,-24,861
 Nick Margevicius,San Diego Padres,SP,244,87.5,34.9,0.382,0.363,-84,860
 Aaron Brooks,Baltimore Orioles,RP,344,89.1,43.5,0.378,0.369,-61,860
-Aaron Sanchez,Houston Astros,SP,592,89.8,42.2,0.353,0.345,-1,859
 Clayton Richard,Toronto Blue Jays,SP,201,91.7,49.7,0.38,0.374,-14,859
 Carson Fulmer,Chicago White Sox,RP,95,88.4,42.1,0.338,0.33,-33,858
 Jimmy Yacabonis,Baltimore Orioles,RP,193,90.7,40.3,0.403,0.385,-85,858
+Jorge Lopez,Kansas City Royals,SP,406,90.4,40.5,0.363,0.365,-10,852
 Burch Smith,Milwaukee Brewers,RP,65,89.6,40,0.397,0.351,-43,852
-Odrisamer Despaigne,Chicago White Sox,SP,68,89,35.8,0.476,0.432,-63,841
+Wei-Yin Chen,Miami Marlins,RP,242,89,42,0.395,0.35,-1,844
+Odrisamer Despaigne,Chicago White Sox,SP,68,89,35.8,0.476,0.432,-62,842
+Aaron Sanchez,Houston Astros,SP,605,89.6,41.7,0.356,0.345,-27,841
 Corbin Burnes,Milwaukee Brewers,RP,223,89,40.7,0.425,0.359,-44,839
 Mike Wright,Seattle Mariners,RP,147,91,46.6,0.401,0.349,-48,838
 Tayler Scott,Baltimore Orioles,SP,77,91.8,37.7,0.512,0.444,-146,838
-Wei-Yin Chen,Miami Marlins,RP,239,89.1,42.7,0.4,0.353,-5,837
-Edwin Jackson,Detroit Tigers,SP,187,91.3,46.5,0.458,0.42,49,837
 Adrian Sampson,Texas Rangers,SP,521,90.7,47.4,0.389,0.373,-88,835
-Felix Hernandez,Seattle Mariners,SP,174,91.7,44.5,0.384,0.344,-75,832
-Jorge Lopez,Kansas City Royals,SP,388,90.5,40.2,0.369,0.366,-32,830
-Zack Godley,Toronto Blue Jays,SP,368,88.9,35.5,0.36,0.364,-39,828
+Trevor Williams,Pittsburgh Pirates,SP,472,87.7,37,0.362,0.349,-79,833
+Felix Hernandez,Seattle Mariners,SP,174,91.7,44.5,0.384,0.344,-76,832
+Zack Godley,Toronto Blue Jays,SP,368,88.9,35.5,0.36,0.364,-39,829
+Edwin Jackson,Detroit Tigers,SP,213,91,44.9,0.447,0.408,4,825
 Evan Phillips,Baltimore Orioles,RP,104,89.8,40.7,0.405,0.368,-78,824
 Tayron Guerrero,Miami Marlins,RP,187,90.5,40.7,0.351,0.359,-65,817
 Jordan Zimmermann,Detroit Tigers,SP,345,89.3,39.5,0.357,0.362,24,815

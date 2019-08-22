@@ -5,6 +5,8 @@ account: jrichey
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 1104441
-bundleId: 2343249
+bundleId: 2343501
 url: https://jrichey.shinyapps.io/playerelo/
-when: 1566433294.75787
+when: 1566440428.66491
+asMultiple: FALSE
+asStatic: FALSE
