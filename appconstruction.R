@@ -4,7 +4,6 @@
 
 library(tidyverse)
 library(data.table)
-library(baseballr)
 setwd("~/Desktop/Jacob/Personal_R/playerElo")
 
 # Load previously calculated park factors, calculated playerElos for 2018,
@@ -294,25 +293,24 @@ p19EloDisplay <- p19EloX %>%
   select(Name, Team, Position, PA, EV, 
          "HH%", wOBA, xwOBA, Trend, playerElo)
 
-# load team records from baseballr package
-al_records <- data.frame(matrix(unlist(standings_on_date_bref(date = "2019-08-18", division = "AL Overall")), 
-                                nrow=15), stringsAsFactors=FALSE) %>%
-  select("Team" = 1, "W" = 2, "L" = 3, "WPct" = 4, "pythWPct" = 8)
-nl_records <- data.frame(matrix(unlist(standings_on_date_bref(date = "2019-08-18", division = "NL Overall")), 
-                                nrow=15), stringsAsFactors=FALSE) %>%
-  select("Team" = 1, "W" = 2, "L" = 3, "WPct" = 4, "pythWPct" = 8)
-team_records <- rbind(al_records, nl_records) %>%
-  arrange(Team)
-team_records$Team <- c("Arizona Diamondbacks", "Atlanta Braves", "Baltimore Orioles",
+# load team records
+standings <- read_csv("data/standings.csv") %>%
+  separate(pythWL, c("pythW", "pythL"), sep = "-") %>%
+  arrange(Tm) %>%
+  filter(Tm != "Avg") %>%
+  mutate(Tm = c("Arizona Diamondbacks", "Atlanta Braves", "Baltimore Orioles",
                        "Boston Red Sox", "Chicago Cubs", "Chicago White Sox", "Cincinnati Reds",
                        "Cleveland Indians", "Colorado Rockies", "Detroit Tigers", "Houston Astros",
                        "Kansas City Royals", "Los Angeles Angels", "Los Angeles Dodgers", "Miami Marlins",
                        "Milwaukee Brewers", "Minnesota Twins", "New York Mets", "New York Yankees",
                        "Oakland Athletics", "Philadelphia Phillies", "Pittsburgh Pirates", "San Diego Padres",
                        "Seattle Mariners", "San Francisco Giants", "St. Louis Cardinals", "Tampa Bay Rays",
-                       "Texas Rangers", "Toronto Blue Jays", "Washington Nationals")
+                       "Texas Rangers", "Toronto Blue Jays", "Washington Nationals"),
+         pythWPct = round(as.numeric(pythW) / (as.numeric(pythW) + as.numeric(pythL)), 3)) %>%
+  rename(Team = Tm, WPct = 'W-L%') %>%
+  select(Team, W, L, WPct, pythWPct)
 
-# calculate team playerEloand get runs scored / against stats, and summarize in team df
+# calculate team playerElo and get runs scored / against stats, and summarize in team df
 b19EloTeam <- b19EloX %>%
   mutate(eloWeight = playerElo * PA) %>%
   group_by(Team) %>%
@@ -333,7 +331,7 @@ eloTeam19 <- b19EloTeam %>%
   left_join(p19EloTeam, by = "Team") %>%
   left_join(RS19Team, by = c("Team" = "Batting_Team")) %>%
   left_join(RA19Team, by = c("Team" = "Pitching_Team")) %>%
-  left_join(team_records, by = "Team")
+  left_join(standings, by = "Team")
 
 # create model for pythWPctand team playerElo, and use coefficients to weight batting vs. pitching
 model <- lm(pythWPct ~ TeamBattingElo + TeamPitchingElo, data = eloTeam19)

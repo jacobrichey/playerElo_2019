@@ -1,9 +1,11 @@
 ## Jacob Richey
-## playerElo App Construction
+## playerElo App
 ## August 2019
 
 library(shiny)
 library(DT)
+library(rsconnect)
+library(tidyverse)
 
 b19EloDisplay <- read_csv("data/b19EloDisplay.csv")
 p19EloDisplay <- read_csv("data/p19EloDisplay.csv")
@@ -117,5 +119,4 @@ server <- function(input, output) {
 }
 
 shinyApp(ui = ui, server = server)
-
 
