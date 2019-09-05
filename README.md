@@ -87,3 +87,7 @@ But most importantly, the fundamental aspect of the playerElo system is that the
 | Santana, 1B | 503 | 0.390 | 0.366 | 142 | 1153 |
 
 There is now a distinguishing factor between the two players, reflected by Freeman’s 2nd best overall playerElo among batters versus Santana’s 22nd overall playerElo.
+
+## Future Work
+There are several areas of playerElo I would like to address in the future...
+
