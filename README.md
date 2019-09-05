@@ -5,6 +5,7 @@ Open the playerElo App here: https://jrichey.shinyapps.io/playerelo/
 Read about playerElo below: 
 
 ###### *For this article, all numbers are updated to August 12th, 2019*
+###### *playerElo method conceived by Professor Abraham Wyner and Jacob Richey*
 
 ## Introduction
 Consider the following comparison between Freddie Freeman (29) and Carlos Santana (33). Both players were starters for the 2019 All-Star teams of their respective leagues and are enjoying breakout seasons, beyond their usual high production level, with nearly identical statistics across the board.
