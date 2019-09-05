@@ -7,11 +7,13 @@ library(DT)
 library(rsconnect)
 library(tidyverse)
 
+# load data found in appconstruction.R
 b19EloDisplay <- read_csv("data/b19EloDisplay.csv")
 p19EloDisplay <- read_csv("data/p19EloDisplay.csv")
 eloTeam19 <- read_csv("data/eloTeam19.csv")
 allPlayerEloX <- read_csv("data/allPlayerEloX.csv")
 
+# compute RGB color quantiles based on playerElo/teamElo for output aesthetics
 allElo <- rbind(b19EloDisplay, p19EloDisplay)
 brksPlayer <- quantile(allElo$playerElo, probs = seq(.05, .95, .05), na.rm = TRUE)
 brksTeam <- quantile(eloTeam19$`Team Elo`, probs = seq(.05, .95, .05), na.rm = TRUE)
@@ -20,8 +22,9 @@ clrs <- c(paste0("rgb(255,", clrNum, ",", clrNum, ")"), paste0("rgb(", 355-clrNu
 
 # write ui for shiny app
 ui <- fluidPage(
-  tags$strong(tags$h1("playerElo 2019")),
-  tags$em(tags$h5("Jacob Richey | University of Pennsylvania | Updated as of August 18th")),
+  tags$strong(tags$h1("playerElo 2019"), 
+              tags$h3("Factoring Context of Performance and Quality of Competition into MLB Player Analysis")),
+  tags$em(tags$h5("Jacob Richey, Professor Abraham Wyner | University of Pennsylvania | Updated as of September 4th")),
   
   tabsetPanel(
     tabPanel("playerElo Ranks", 
@@ -53,7 +56,8 @@ ui <- fluidPage(
     tabPanel("playerElo Graphically",
              selectInput(inputId = "plySelect", label = "Player", choices = sort(unique(allPlayerEloX$Name)), 
                          multiple = T, selected = NULL),
-             tags$em("Please allow a few moments for the graph to update."),
+             tags$em("Please allow a few moments for the graph to update. 
+                     The bold horizontal line denotes the league average playerElo (roughly 980)."),
              plotOutput("graph", height = 600))
   )
 )

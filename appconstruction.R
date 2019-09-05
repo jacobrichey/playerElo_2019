@@ -1,25 +1,25 @@
-## Jacob Richey
-## playerElo App Construction
+## playerElo App
 ## August 2019
 
 library(tidyverse)
 library(data.table)
 setwd("~/Desktop/Jacob/Personal_R/playerElo")
 
-# Load previously calculated park factors, calculated playerElos for 2018,
-# and a matrix of quadratic coefficients based on game state to be used in playerElo calculations
+# load previously calculated park factors
 parkFactors <- read_csv("data/ParkFactors.csv")
+# load calculated ending playerElos for 2018
 b18Elo <- read_csv("data/b18Elo.csv") %>%
   mutate(player_id = as.character(player_id))
 p18Elo <- read_csv("data/p18Elo.csv") %>%
   mutate(player_id = as.character(player_id))
+# load matrix of previously calculated quadratic coefficients to be used in playerElo calculations
 stateMatrix <- read.csv("data/stateMatrix.csv")
 
 # compile and clean data to a usable format
 pbp.compile <- function(data) {
   data <- data[-(1:2), 
                ][ ,c("V1","V18","V19","V20","V21","V22","V23","V24","V25","V26","V27",
-                     "V28","V29","V30","V31","V32","V33","V34","V35"):=NULL]
+                     "V28","V29","V30","V31","V32","V33","V34","V35","V45"):=NULL]
   names(data) <- c("GameID", "Date", "Inning", "Road_Score", "Home_Score",
                    "Batting_Team", "Batter", "Batter_MLB_ID", "Batter_Hand",
                    "Runner1B", "Runner2B", "Runner3B", "Pitching_Team",
@@ -85,7 +85,8 @@ compute.runs.value <- function(data) {
            ][, Runs_Value := RE_NewState - RE_State + Runs_OnPlay]
 }
 
-RE19 <- fread("data/08-20-2019-mlb-season-pbp-feed.csv")
+# load pbp data for 2019 season
+RE19 <- fread("data/09-04-2019-mlb-season-pbp-feed.csv")
 RE19 <- pbp.compile(RE19)
 RE19 <- compute.runs.value(RE19)
 
@@ -100,21 +101,21 @@ teamsIso19p <- RE19 %>%
   distinct(Pitcher_MLB_ID, .keep_all = TRUE)
 
 # import savant expected stats, and add player team
-b19 <- read_csv("data/savant-expected-stats-batters19.csv") %>%
+b19 <- read_csv("data/expected_stats-6.csv") %>%
   mutate(player_id = as.character(player_id)) %>%
   left_join(teamsIso19b, by = c("player_id" = "Batter_MLB_ID")) %>%
   select(first_name, last_name, year, Batting_Team, everything())
-p19 <- read_csv("data/savant-expected-stats-pitchers19.csv") %>%
+p19 <- read_csv("data/expected_stats-7.csv") %>%
   mutate(player_id = as.character(player_id)) %>%
   left_join(teamsIso19p, by = c("player_id" = "Pitcher_MLB_ID")) %>%
   select(first_name, last_name, year, Pitching_Team, everything())
 
-# compute standardized home field advantage for season
+# compute standardized home field advantage
 RE19Home <- filter(RE19, substr(Inning, 2, 2) == 'B')
 RE19Away <- filter(RE19, substr(Inning, 2, 2) == 'T')
 homeAdv <- mean(RE19Home$Runs_Value) - mean(RE19Away$Runs_Value)
 
-# create df to compute 2019 Elo, including previous season Elo regressed 15% to mean, 
+# create df to update 2019 playerElo, including previous season Elo regressed 15% to mean, 
 # savant stats, and player team
 b19Elo <- data.frame(player_id = unique(RE19$Batter_MLB_ID)) %>%
   mutate(player_id = as.character(player_id)) %>%
@@ -131,7 +132,7 @@ p19Elo <- data.frame(player_id = unique(RE19$Pitcher_MLB_ID)) %>%
   left_join(p19, by = 'player_id') %>%
   select(player_id, preseasonElo, currentElo, first_name, last_name, Pitching_Team, everything(), -Date)
 
-# create dt to track playerElo progression
+# create data.table to track playerElo progression
 allPlayerElo <- data.table(
   playerID = NA,
   PA = NA,
@@ -152,7 +153,7 @@ for (row in 1:nrow(RE19)) {
   p19Elo$BFP.x[which(p19Elo$player_id == pitcherID)] <-
     p19Elo$BFP.x[which(p19Elo$player_id == pitcherID)] + 1
   
-  # add playerElo for current at bat count to progression df
+  # add playerElo for current at bat count to progression data.table
   allPlayerElo <- rbindlist(list(allPlayerElo,
                                  list(batterID,
                                       b19Elo$PA.x[which(b19Elo$player_id == batterID)],
@@ -162,22 +163,23 @@ for (row in 1:nrow(RE19)) {
                                       pitcherElo))
   )
   
-  # compute expected runs value for matchup
-  # stateMatrix values found by running elo computation many times, 
+  # compute expected runs value for matchup, based on current state and playerElo of batter and pitcher
+  # stateMatrix coefficients computed by repeatadly running playerElo calculation over the previous three years, 
+  # and finding relationship between playerElo and performance (measured by wOBA and run value) in each base-out state
   matrixRow <- which(stateMatrix$State == RE19$State_Before[row])
   ex.rv.batter <- (stateMatrix$bA[matrixRow] * batterElo^2) +
     (stateMatrix$bB[matrixRow] * batterElo) + stateMatrix$bC[matrixRow]
   ex.rv.pitcher <- (stateMatrix$pA[matrixRow] * pitcherElo^2) +
     (stateMatrix$pB[matrixRow] * pitcherElo) + stateMatrix$pC[matrixRow]
+  # add in home field advantage (if applicable)
   if (substr(RE19$Inning[row], 2, 2) == 'B') {
     ex.rv.batter <- ex.rv.batter + homeAdv
   }
+  # find park factor
   park.factor <- parkFactors$Park_Factor[
     which(parkFactors$Park == str_sub(RE19$GameID[row], -5, -3))]
 
   # compare expected RV to actual RV and update playerElo accordingly
-  # stateMatrix coefficients computed by repeatadly running Elo calculation over the previous three years, 
-  # and finding relationship between playerElo and performance in each run-out state
   rv.diff <- RE19$Runs_Value[row] - ((ex.rv.batter + ex.rv.pitcher) / 2) - park.factor
   bEloChange <- ((921.675 + (6046.370 * rv.diff) - batterElo) / 502)
   pEloChange <- ((965.754 - (4762.089 * rv.diff) - pitcherElo) / 502)
@@ -190,7 +192,7 @@ for (row in 1:nrow(RE19)) {
     p19Elo$currentElo[which(p19Elo$player_id == pitcherID)] <- pitcherElo + pEloChange
   }
   
-  # completion percentage
+  # print completion percentage
   if (row %% 1000 == 0) {
     print(paste0(round(100 * row / nrow(RE19), 2), "%"))
   }
@@ -207,12 +209,12 @@ pitcherStats19 <- read_csv("data/mlb-player-stats-P.csv") %>%
   select(first_name, last_name, Pos, ERA, WHIP)
 
 # load exit velo stats on players
-batterVeloStats19 <- read_csv("data/savant-batter-exitvelo-19.csv") %>%
+batterVeloStats19 <- read_csv("data/exit_velocity-2.csv") %>%
   mutate(player_id = as.character(player_id)) %>%
   rename(EV = avg_hit_speed,
          'HH%' = ev95percent) %>%
   select(player_id, EV, "HH%")
-pitcherVeloStats19 <- read_csv("data/savant-pitcher-exitvelo-19.csv") %>%
+pitcherVeloStats19 <- read_csv("data/exit_velocity-3.csv") %>%
   mutate(player_id = as.character(player_id)) %>%
   rename(EV = avg_hit_speed,
          'HH%' = ev95percent) %>%
@@ -247,14 +249,14 @@ b19EloX$Position[which(b19EloX$player_id == 670712)] <- "3B"
 b19EloX$Position[which(b19EloX$player_id == 592261)] <- "OF"
 b19EloX$Position[which(b19EloX$player_id == 596105)] <- "OF"
 b19EloX$Position[which(b19EloX$player_id == 628356)] <- "3B"
-# continue to clena and add labels to pitchers, include trend
+# continue to clean and add labels to pitchers, include trend over last 50 PA
 b19EloX <- b19EloX %>%
   distinct(player_id, .keep_all = TRUE) %>%
   drop_na(EV) %>%
   mutate(Position = replace_na(Position, "P")) %>%
   left_join(allPlayerX, by = c("player_id" = "playerID", "PA")) %>%
   mutate(Trend = replace_na(Trend, 1000))
-# select columns for display
+# select columns for display in Shiny App
 b19EloDisplay <- b19EloX %>%
   unite("Name", First_Name, Last_Name, sep = " ") %>%
   mutate(Trend = round(playerElo - Trend, 0)) %>%
@@ -333,7 +335,8 @@ eloTeam19 <- b19EloTeam %>%
   left_join(RA19Team, by = c("Team" = "Pitching_Team")) %>%
   left_join(standings, by = "Team")
 
-# create model for pythWPctand team playerElo, and use coefficients to weight batting vs. pitching
+# create model for pythWPctand team playerElo, and use coefficients to weight battingElo vs. pitchingElo in
+# aggregate TeamElo rankings
 model <- lm(pythWPct ~ TeamBattingElo + TeamPitchingElo, data = eloTeam19)
 eloTeam19 <- eloTeam19 %>%
   mutate(aggTeamElo = ((model$coefficients[2] / (model$coefficients[2] + model$coefficients[3])) * TeamBattingElo) +
