@@ -15,6 +15,7 @@ Consider the following comparison between Freddie Freeman (29) and Carlos Santan
 | :-: | :-: | :-: | :-: |
 | Freeman, 1B | 533 | 0.400 | 0.398 | 146 |
 | Santana, 1B | 503 | 0.390 | 0.366 | 142 |
+
 *Data from FanGraphs, Baseball Savant.*
 
 However, I argue there is an underlying statistic that makes Santana’s success less impressive and Freeman’s MVP-consideration worthy. Recall the quality of competition of pitchers faced. The Atlanta Braves’ division, the NL East, contains the respectable pitching competition of the Mets (13th league-wide in ERA), Nationals (15th), Marlins (16th), and Phillies (19th). Contrast this with the competition of the Cleveland Indians in the AL Central: The Twins (9th), White Sox (22nd), Royals (24th), and Tigers (28th). Over 503 plate appearances, Santana has faced a top fifteen pitcher (ranked by FIP) just 15 times, compared to 46 times by Freeman over 533 plate appearances. wRC+ controls for park effects and the current run environment, while xwOBA takes into account quality of contact, but all modern sabermetrics fail to address the problem of Freeman and Santana’s near-equal statistics, despite widely different qualities of competition. Thus, I present the modeling system of playerElo.
@@ -37,6 +38,7 @@ The following run expectancy matrix presents the expected runs scored for the re
 | 1B | -- | 3B | 1.77 | 1.20 | 0.48 |
 | -- | 2B | 3B | 1.97 | 1.40 | 0.56 |
 | 1B | 2B | 3B | 2.21 | 1.54 | 0.75 |
+
 *Data from Retrosheet, 2016-2018.*
 
 The model begins with a calibration year of 2018, and for 2019, players begin with their previous seasons’ ending playerElo, regressed to the mean slightly. If a player did not have a single plate appearance or batter faced pitching in 2018, for example Vladimir Guerrero Jr. or Chris Paddack, they are assigned a baseline playerElo of 1000 (calibration year of 2018 began every player at 1000). For every at-bat, given the current base-out state, an expected run value for both the batter and pitcher is calculated, based on quadratic formulas of historic performance of players of that caliber in the given situation. The dependency of the Elo formula on the base-out state ensures the model is context-dependent, meaning it incorporates the fact that a bases-loaded double is far more valuable than a double with bases empty, however, it also takes into account that runs were more likely to be scored in the former situation compared to the latter. It is important to note playerElo is a raw batting statistic and does not evaluate overall production, meaning stolen bases are not factored in to the ranking system. Additionally, while the model does not take into account defense, it also does not count stolen bases or passed balls negatively against a pitcher, and likewise does not count changes in game states due to wild pitches positively for a batter.
@@ -88,6 +90,7 @@ But most importantly, the fundamental aspect of the playerElo system is that the
 | :-: | :-: | :-: | :-: | :-: |
 | Freeman, 1B | 533 | 0.400 | 0.398 | 146 | 1304 |
 | Santana, 1B | 503 | 0.390 | 0.366 | 142 | 1153 |
+
 *Data from FanGraphs, Baseball Savant.*
 
 There is now a distinguishing factor between the two players, reflected by Freeman’s 2nd best overall playerElo among batters versus Santana’s 22nd overall playerElo.
