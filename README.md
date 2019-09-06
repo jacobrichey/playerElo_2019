@@ -8,8 +8,6 @@ View this article published on FanGraphs here: https://community.fangraphs.com/p
 ###### *playerElo method conceived by Professor Abraham Wyner and Jacob Richey*
 ###### *Data sourced from Baseball Savant, RotoWire, Baseball Reference, Retrosheet, and BigDataBall*
 
-Read about playerElo below:
-
 ## Introduction
 Consider the following comparison between Freddie Freeman (29) and Carlos Santana (33). Both players were starters for the 2019 All-Star teams of their respective leagues and are enjoying breakout seasons, beyond their usual high production level, with nearly identical statistics across the board.
 
