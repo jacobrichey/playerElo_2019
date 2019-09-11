@@ -1,0 +1,12 @@
+name: playerElo
+title: playerElo
+username:
+account: jrichey
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 1104441
+bundleId: 2407341
+url: https://jrichey.shinyapps.io/playerelo/
+when: 1568232314.65345
+asMultiple: FALSE
+asStatic: FALSE
