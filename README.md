@@ -4,16 +4,15 @@ Open the playerElo App here: https://jrichey.shinyapps.io/playerelo/
 
 View this article published on FanGraphs here: https://community.fangraphs.com/playerelo-factoring-strength-of-schedule-into-player-analysis/
 
-###### *For this article, all numbers are updated to August 12th, 2019*
-###### *playerElo method conceived by Professor Abraham Wyner and Jacob Richey*
-###### *Data sourced from Baseball Savant, RotoWire, Baseball Reference, Retrosheet, and BigDataBall*
+###### *For this article, all numbers are updated to September 10th, 2019.*
+###### *Data sourced from Baseball Savant, RotoWire, Baseball Reference, Retrosheet, and BigDataBall.*
 
 ## Introduction
 Consider the following comparison between Freddie Freeman (29) and Carlos Santana (33). Both players were starters for the 2019 All-Star teams of their respective leagues and are enjoying breakout seasons, beyond their usual high production level, with nearly identical statistics across the board.
 
 | PA | wOBA | xwOBA | wRC+ |
 | :-: | :-: | :-: | :-: |
-| Freeman, 1B | 533 | 0.400 | 0.398 | 146 |
+| Freeman, 1B | 624 | 0.400 | 0.398 | 146 |
 | Santana, 1B | 503 | 0.390 | 0.366 | 142 |
 
 *Data from FanGraphs, Baseball Savant.*
