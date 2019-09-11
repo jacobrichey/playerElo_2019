@@ -12,12 +12,12 @@ Consider the following comparison between Freddie Freeman (29) and Carlos Santan
 
 | PA | wOBA | xwOBA | wRC+ |
 | :-: | :-: | :-: | :-: |
-| Freeman, 1B | 624 | 0.400 | 0.398 | 146 |
-| Santana, 1B | 503 | 0.390 | 0.366 | 142 |
+| Freeman, 1B | 643 | 0.398 | 0.396 | 144 |
+| Santana, 1B | 624 | 0.389 | 0.371 | 141 |
 
 *Data from FanGraphs, Baseball Savant.*
 
-However, I argue there is an underlying statistic that makes Santana’s success less impressive and Freeman’s MVP-consideration worthy. Recall the quality of competition of pitchers faced. The Atlanta Braves’ division, the NL East, contains the respectable pitching competition of the Mets (13th league-wide in ERA), Nationals (15th), Marlins (16th), and Phillies (19th). Contrast this with the competition of the Cleveland Indians in the AL Central: The Twins (9th), White Sox (22nd), Royals (24th), and Tigers (28th). Over 503 plate appearances, Santana has faced a top fifteen pitcher (ranked by FIP) just 15 times, compared to 46 times by Freeman over 533 plate appearances. wRC+ controls for park effects and the current run environment, while xwOBA takes into account quality of contact, but all modern sabermetrics fail to address the problem of Freeman and Santana’s near-equal statistics, despite widely different qualities of competition. Thus, I present the modeling system of playerElo.
+However, I argue there is an underlying statistic that makes Santana’s success less impressive and Freeman’s MVP-consideration worthy. Recall the quality of competition of pitchers faced. The Atlanta Braves’ division, the NL East, contains the respectable pitching competition of the Nationals (12th league-wide in ERA), Mets (13th), Phillies (18th), and Marlins (21st). Contrast this with the competition of the Cleveland Indians in the AL Central: The Twins (8th), White Sox (23rd), Royals (27th), and Tigers (28th). Over their first 500 plate appearances, Santana faced a top fifteen pitcher ranked by FIP just 15 times, compared to 44 times by Freeman. wRC+ controls for park effects and the current run environment, while xwOBA takes into account quality of contact, but all modern sabermetrics fail to address the problem of Freeman and Santana’s near-equal statistics, despite widely different qualities of competition. Thus, I present the modeling system of playerElo.
 
 
 ## Methodology
