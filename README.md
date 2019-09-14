@@ -4,7 +4,7 @@ Open the playerElo App here: https://jrichey.shinyapps.io/playerelo/
 
 View this article published on FanGraphs here: https://community.fangraphs.com/playerelo-factoring-strength-of-schedule-into-player-analysis/
 
-###### *For this article, all numbers are updated to September 10th, 2019.*
+###### *For the following article, all numbers are updated to September 10th, 2019.*
 ###### *Data sourced from Baseball Savant, RotoWire, Baseball Reference, Retrosheet, and BigDataBall.*
 
 ## Introduction
