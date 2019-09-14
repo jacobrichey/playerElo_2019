@@ -10,8 +10,8 @@ View this article published on FanGraphs here: https://community.fangraphs.com/p
 ## Introduction
 Consider the following comparison between Freddie Freeman (29) and Carlos Santana (33). Both players were starters for the 2019 All-Star teams of their respective leagues and are enjoying breakout seasons, beyond their usual high production level, with nearly identical statistics across the board.
 
-| PA | wOBA | xwOBA | wRC+ |
-| :-: | :-: | :-: | :-: |
+| | PA | wOBA | xwOBA | wRC+ |
+| | :-: | :-: | :-: | :-: |
 | Freeman, 1B | 643 | 0.398 | 0.396 | 144 |
 | Santana, 1B | 624 | 0.389 | 0.371 | 141 |
 
