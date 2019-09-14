@@ -104,3 +104,26 @@ There is now a distinguishing factor between the two players, reflected by Freem
 
 
 ## Technical Appendix
+
+The following is an example walkthrough of the playerElo calculations from a single plate appearance. Consider an imaginary matchup between Cody Bellinger and Charlie Morton at Dodger Stadium on June 1st, 2019. There are runners on second and third, with one out. Bellinger had a playerElo of 1237 at this point in the season, Morton a playerElo of 1082. 
+
+Given the base-out state, coefficients from the state matrix are used to calculate an expected runs value for both Bellinger and Morton based on their playerElo.
+`xRV_Player = A(playerElo)^2 + B(playerElo) + C`
+`xRV_Bellinger = 0.000001157(1237)^2 - 0.001744(1237) + 0.5529 = 0.1659`
+`xRV_Morton = 0.000001849(1082)^2 - 0.003502(1082) - 1.6840 = -0.05969`
+
+Bellinger is batting at home, so a standard home field advantage adjustment will be made to `xRV_Bellinger`. This home advantage value is found by simply comparing the mean run value scored by teams at home versus away. 
+`Modified xRV_Player = Original xRV_Player + Home Advantage`
+`xRV_Bellinger = 0.1659 + 0.006605 = 0.1725`
+
+Now, let's assume Bellinger hits a double scoring both baserunners. The expected run value of the play will be compared to the actual run value of the play, with a park factor included. Park factors are by comparing the average run value of visting teams at every stadium to the average run value at all stadiums.
+`RV_Diff = Play RV - ((xRV_Batter + xRV_Pitcher) / 2) - Park Factor`
+`RV_Diff = 1.29 - ((0.1725 + (-0.05969)) / 2) - (-0.01872) = 1.2523`
+
+The playerElo adjustments are found with formulas reflective of the relationship between wOBA / FIP and run value per PA / BFP.
+`Batter Elo Change = (921.675 + (6046.370 * RV_Diff) - batterElo) / 502`
+`Bellinger Elo Change = (921.675 + (6046.370 * 1.2523) - 1237) / 502 = +14.46`
+`Pitcher Elo Change = (965.754 - (4762.089 * RV_Diff) - pitcherElo) / 502`
+`Pitcher Elo Change = (965.754 - (4762.089 * 1.2523) - 1084) / 502 = -12.12`
+
+If there was an error on the play, these adjustments would be disregarded unless the elo change is still negative for the batter or positive for the pitcher. 
