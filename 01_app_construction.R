@@ -256,7 +256,7 @@ pitcher_positions <- read_csv("data/mlb-player-stats-P.csv") %>%
   separate(Player, into = c("first_name", "last_name"), 
            sep = " ", extra = "merge") %>%
   mutate(Pos = ifelse(G - GS < 5 | IP > 65, "SP", "RP")) %>%
-  select(first_name, last_name, Pos, ERA, WHIP)
+  select(first_name, last_name, Pos, ERA, WHIP, IP)
 
 # Load exit velo stats on players (source: Baseball Savant).
 batter_ev <- read_csv("data/exit_velocity-2.csv", 
@@ -305,7 +305,8 @@ b19Elo_mod$Position[which(b19Elo_mod$player_id == 628356)] <- "3B"
 b19Elo_mod <- b19Elo_mod %>%
   distinct(player_id, .keep_all = TRUE) %>%
   drop_na(EV) %>%
-  mutate(Position = replace_na(Position, "P")) %>%
+  mutate(Position = replace_na(Position, "P"),
+         playerElo = playerElo + 1000 - mean(playerElo)) %>%
   left_join(all_playerElo_mod, by = c("player_id" = "playerID", "PA")) %>%
   mutate(Trend = replace_na(Trend, 1000))
 # Select columns for display in Shiny App.
@@ -337,9 +338,10 @@ p19Elo_mod$Position[which(p19Elo_mod$player_id == 641482)] <- "RP"
 p19Elo_mod$Position[which(p19Elo_mod$player_id == 597113)] <- "RP"
 p19Elo_mod <- p19Elo_mod %>%
   distinct(player_id, .keep_all = TRUE) %>%
-  drop_na(EV) %>%
+  drop_na(EV, IP) %>%
   left_join(all_playerElo_mod, by = c("player_id" = "playerID", "PA")) %>%
-  mutate(Trend = replace_na(Trend, 1000))
+  mutate(Trend = replace_na(Trend, 1000),
+         playerElo = playerElo + 1000 - mean(playerElo))
 p19Elo_disp <- p19Elo_mod %>%
   unite("Name", First_Name, Last_Name, sep = " ") %>%
   mutate(Trend = round(playerElo - Trend)) %>%
@@ -366,17 +368,19 @@ standings <- read_csv("data/standings.csv") %>%
   rename(Team = Tm, WPct = "W-L%") %>%
   select(Team, W, L, WPct, pythWPct)
 
-# Calculate team playerElo, weighting individual playerElo's by PA / BFP,
+# Calculate team playerElo, weighting individual playerElo's by PA / IP,
 # get runs scored / against stats, and summarize in team df.
 b19Elo_team <- b19Elo_mod %>%
   mutate(eloWeight = playerElo * PA) %>%
   group_by(Team) %>%
   summarise(TeamBattingElo = sum(eloWeight) / sum(PA)) %>%
+  mutate(TeamBattingElo = TeamBattingElo + 1000 - mean(TeamBattingElo)) %>%
   drop_na()
 p19Elo_team <- p19Elo_mod %>%
-  mutate(eloWeight = playerElo * PA) %>%
+  mutate(eloWeight = playerElo * IP) %>%
   group_by(Team) %>%
-  summarise(TeamPitchingElo = sum(eloWeight) / sum(PA)) %>%
+  summarise(TeamPitchingElo = sum(eloWeight) / sum(IP)) %>%
+  mutate(TeamPitchingElo = TeamPitchingElo + 1000 - mean(TeamPitchingElo)) %>%
   drop_na()
 rs19_team <- RE19 %>%
   group_by(Batting_Team) %>%
@@ -390,22 +394,15 @@ teamElo19 <- b19Elo_team %>%
   left_join(ra19_team, by = c("Team" = "Pitching_Team")) %>%
   left_join(standings, by = "Team")
 
-# Create model for pythWPct and team playerElo, and use coefficients to 
-# weight battingElo vs. pitchingElo in aggregate TeamElo rankings.
-model <- lm(pythWPct ~ TeamBattingElo + TeamPitchingElo, data = teamElo19)
+# Compute team ranks using z scores of Team Batting and Pitching Elo.
 teamElo19 <- teamElo19 %>%
-  mutate(aggTeamElo = 
-           ((model$coefficients[2] / 
-               (model$coefficients[2] + model$coefficients[3])) * 
-              TeamBattingElo) + 
-           ((model$coefficients[3] / 
-               (model$coefficients[2] + model$coefficients[3])) * 
-              TeamPitchingElo),
+  mutate(b_zscore = (TeamBattingElo - mean(TeamBattingElo)) / sd(TeamBattingElo),
+         p_zscore = (TeamPitchingElo - mean(TeamPitchingElo)) / sd(TeamPitchingElo),
+         aggTeamElo = round(1000 + 20 * b_zscore + 20 * p_zscore),
          pythWPct = signif(as.numeric(pythWPct), 3),
          WPct = signif(as.numeric(WPct), 3),
          TeamBattingElo = round(TeamBattingElo),
-         TeamPitchingElo = round(TeamPitchingElo),
-         aggTeamElo = round(aggTeamElo)) %>%
+         TeamPitchingElo = round(TeamPitchingElo)) %>%
   arrange(desc(aggTeamElo)) %>%
   select(Team, W, L, WPct, pythWPct, Runs_Scored, Runs_Against, 
          TeamBattingElo, TeamPitchingElo, aggTeamElo) %>%
