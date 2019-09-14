@@ -52,58 +52,55 @@ It is important to note playerElo is a raw batting statistic and does not evalua
 Refer to the Technical Appendix at the end of the README.md for further details regarding the playerElo methodology.
 
 
-## Analysis
-**Elo Rankings**
+## Player Analysis
 
 ![playerElo Top 25](https://user-images.githubusercontent.com/22247220/64912297-1fca5580-d6fb-11e9-988d-b4f9442d5576.png)
 
+It is interesting to note Nolan Arenado and Edwin Encarnacion do particularly well in the model, even with park factor adjustments. This is can be attributed to the difficulty of schedule of the Rockies and Yankees, facing the tough pitching competition in the NL West and AL East respectively. The average pitching Elo faced by Arenado and Encarnacion is 1010.5 and 1009.6 (20th and 25th highest overall). Quality of contact does leave room to be desired for Arenado, however playerElo does not incorporate statistics like exit velocity and launch angle in its calculations, and thus the model is a better reflection of on-field performance than underlying swing metrics. In contrast to Arenado and Encarnacion, Yordan Álvarez has played incredibly since called up in June but has faced some of the easiest competition in the league, with an average Elo faced of only 986.8.
+
+Pitching wise, the breakout performances of Gray, Gallegos, and Bieber are all captured and supported by the playerElo model. Verlander recently wrenched the pitching Elo throne away from Scherzer following his no-hitter and several dominant outings. Mike Minor ranks particularly high after seeing success against the high-powered offense of the Astros (3rd in runs scored), Athletics (7th), Angels (13th), and Mariners (17th), and could have been an impact pitcher if dealt at the deadline. In contrast, playerElo has little faith in Trevor Bauer, one of the most discussed pitchers at the deadline and for whom the Reds paid a good price for. Bauer is ranked 166th among SPs with more than 100 batters faced, with a playerElo of 919 after beginning the season with a preseasonElo of 1111. He has struggled mightily against relatively easy divisions of the AL Central and NL Central, posting an xFIP of 4.40 against an average Elo faced of 979.5. We can visualize Bauer’s season long downward playerElo trend within the context of the league with the following graphic. Displayed below is the playerElo trends of the entire MLB for 2019, with specific batters and pitchers highlighted. The bold line on both graphs denotes the average playerElo.
+
+![Season Long Trend](https://user-images.githubusercontent.com/22247220/64912327-8fd8db80-d6fb-11e9-852d-d7378f14a05f.png)
+
+The graph illustrates Mike Trout has dominated since the start of the year and Harper has consistently been great and continues to rise in playerElo. Alvarez elevates from a rookie with a playerElo of 1000 to the top tier of players. On the pitcher side, Hyun-Jin Ryu was briefly the best pitcher in the game, as ranked by playerElo, for several starts, but has since come back to Earth hard with a sharp decline. Bauer’s long decline is evidenced throughout the season, with his playerElo reaching all-time lows over his past few starts.
 
 
-It is interesting to note Charlie Blackmon does particularly well in the model, even with park factor adjustments. This is can be attributed to the difficulty of schedule of the Rockies and likely the high performance of Blackmon contextually. The Rockies regularly face the powerhouse pitching of the LA Dodgers, and the respectable competition of the Diamondbacks, Padres, and Giants. Blackmon has faced 58 top fifteen pitchers (rated by FIP) respectively thus-far, 5th among batters with over 100 plate appearances. Blackmon also has the 15th average playerElo faced batting. Quality of contact does leave room to be desired, however, playerElo does not incorporate statistics like exit velocity and launch angle in its calculations, and thus the model is a better reflection of on-field performance than underlying swing metrics. Likewise, Cody Bellinger, while he still ranks high, is knocked down a few rungs to 9th overall among batters due to ease of competition (only 26 top pitchers faced).
+## Team Analysis
 
-Pitching wise, the breakout performances of Ryu, Gallegos, and Morton are all captured and supported by the playerElo model. Scherzer, Hader, and Yates’ continued success looks to be sustainable. Mike Minor ranks particularly high (18th among SPs) after seeing success against the high-powered offense of the Astros (4th in runs scored), Athletics (10th), Angels (11th), and Mariners (14th), and would have been an impact pitcher if dealt at the deadline.
-
-In contrast, playerElo has little faith in Trevor Bauer, one of the most discussed pitchers at the deadline, especially in the impact he will have on the Reds. Bauer is ranked 74th among SPs with more than 100 batters faced, with a currentElo of 1010.21 after beginning the season with a preseasonElo of 1111.30. He has struggled mightily against a relatively easy division of the AL Central (apart from the Twins), regularly facing the Royals (24th in runs scored), White Sox (28th), and Tigers (30th), posting an xFIP of 4.29. However, the Reds play in a division only slightly tougher offensively than the Indians and given the recent trend of quality starts from Bauer (despite his most recent, which included an impressive temper tantrum), it’s entirely possible Bauer does indeed turn things around for the second half. We can visualize Bauer’s season long playerElo trend within the context of the league with the following graphic. Displayed below is the playerElo trends of the entire MLB for 2019, with specific batters and pitchers highlighted. The bold line on both graphs denotes the average playerElo.
-
-<img width="1328" alt="allseasongraphic" src="https://user-images.githubusercontent.com/22247220/63378759-c8c5a080-c347-11e9-8777-33fa10485223.png">
-
-The graph illustrates Mike Trout has dominated since the start of the year and Harper has consistently been great and continues to rise in playerElo (now ranked 10thamong batters). Tatis Jr. elevates from a rookie with a playerElo of 1000 to approaching the top tier of players, and Joey Votto has slowly declined in value all season, with occasional flashes of his former ability. On the pitcher side, both Scherzer and Hader have maintained their elite status all season. Aaron Nola’s curve looks to be a long valley, but by his current trend he can be expected to regain his former value and playerElo score.
-
-
-**Sabermetric Analysis**
-
-As playerElo only evaluates historical season performance to-date, and is not a prediction statistic, comparing playerElo with underlying swing metrics can enable accurate forecasts as to potential second-half decliners, and identify first-half breakouts that are for real.
-
-The below heat-map style table displays the top 40 players ranked by Expected Weighted On-Base Average (xwOBA), per Baseball Savant, with currentElo, Expected Batting Average(xBA), and Expected Slugging (xSLG) also displayed. By evaluating the four statistics in collectively, it is easy to identify players such as J.D. Davis, Alex Avila, Justin Smoak, Jason Castro, and C.J. Cron, whose quality of contact has been excellent, but have faced relatively easier pitching or performed worse contextually than other batters with similar quality of contact (as shown by the lighter shade of currentElo). Additionally, players such as Trout, Rendon, Yelich, LeMahieu and Freeman, have performed extremely well, and their level of competition backs up their success. Harper and Bogaerts are likely due for excellent second halves, as they have continuously faced tough competition, and thrived under the circumstances, all-the-while maintaining solid quality of contact.
-
-![b19SaberRankings](https://user-images.githubusercontent.com/22247220/64912296-1d67fb80-d6fb-11e9-8238-b953c8b87eb6.png)
-
-Pitching wise, the heat map is again ranked by Expected wOBA. Kirby Yates and Josh Hader standout among all pitchers, both with a high playerElo yet extremely low quality of contact stats. Gallegos, Scherzer, Cole, and deGrom all have a high currentElo and excellent quality of contact numbers. In contrast, García, Neris, and Morgan have posted great numbers, but their low currentElo indicate they have struggled contextually or against tougher competition (or simply have not faced tough competition), perhaps a sign of second-half regression.
-
-![p19SaberRankings](https://user-images.githubusercontent.com/22247220/63378781-d4b16280-c347-11e9-98c7-aa6a3ecd64a9.png)
-
-## Teams
-Aggregate teamElo power rankings can also be created from playerElo, with weights for each individual playerElo assigned by the plate appearances of the batter, or batters faced of the pitcher. Recall playerElo does not take into account defense or stolen bases, which will influence the ratings slightly. Speedster teams such as the Royals and Mariners will rank slightly lower than their true abilities, and conversely the White Sox and Tigers, who have had atrocious defensive performances thus far (2nd and 3rd respectively among the league in errors), will rank slightly higher than true value. However, the teamElo rankings still give a fairly accurate view of the current state of the MLB, and particularly highlight upstart teams such as the Braves, Nationals, and Athletics that could be even better than they have seemed thus-far. Team Batting Elo is highly correlated with Runs Scored (r = 0.90), as is Team Pitching Elo with Runs Against (r = -0.91).
+Team Batting and Pitching Elo power rankings can also be created from playerElo, with weights for each individual playerElo determined by the plate appearances of the batter or innings pitched of the pitcher. To account for differences in variance, z-scores are used to weight team Batting and Pitching Elo to create an aggregate Team Elo. Recall playerElo does not take into account defense or stolen bases, which will influence the ratings slightly. Speedster teams such as the Royals, Rangers, and the Mariners will rank slightly lower than their true abilities, and conversely the Padres and Cubs, who have had atrocious defensive performances thus far, will rank slightly higher than true value. However, the Team Elo rankings still give a fairly accurate view of the current state of the MLB, and particularly highlight upstart teams such as the Nationals and Athletics that could be even better than they have seemed thus-far.
 
 ![teamEloRankings](https://user-images.githubusercontent.com/22247220/64912298-20fb8280-d6fb-11e9-8dfd-d516002e0f83.png)
 
-## Application
-The playerElo system is able to reveal characteristics of the game and performance current metrics miss. For example, the context-dependent nature and run value calculations of playerElo appropriately credits a reliever who gets three outs without allowing a run after the previous pitcher loaded the bases, and similarly splits the credit of those runs being allowed between the pitcher who loaded the bases, and the reliever who failed to get the necessary outs to end the inning. Additionally, playerElo does not assign extra value to players who simply come up to the plate in high-powered offenses who often come up to the plate with runners on, nor docks players who simply do not get the same opportunities as their peers to accumulate as many counting statistics such as RBIs by nature of playing for a bad team.
 
-The difference between the playerElo rankings when run context-dependent, treating at-bats differently depending on the runs-out state, and context-free, meaning it treats all at-bats with equal weights of importance, highlight the important of including context in player evaluation. The playerElo system accurately captures if hitters consistently bat in favorable situations, and appropriately does not allow this to overinflate their value.
+## Sabermetric Context of playerElo
+
+As playerElo only evaluates historical season performance to-date, and is not a prediction statistic, comparing playerElo with underlying swing metrics can enable accurate forecasts as to potential second-half decliners, and identify first-half breakouts that are for real. The below heat-map style table displays the top 40 players ranked by Expected Weighted On-Base Average (xwOBA), per Baseball Savant, with playerElo, Exit Velocity (EV), and Hard-Hit Percentage (HH%) also displayed. By evaluating the four statistics in collectively, it is easy to identify players such as J.D. Davis, Justin Smoak, C.J. Cron, and Gary Sanchez, whose quality of contact has been excellent, but have performed worse contextually or faced relatively easier pitching than other batters with similar quality of contact. Additionally, players such as Trout, Yelich, Rendon, Freeman, Bregman, and Marte have performed extremely well, and their contextual performance and level of competition backs up their success.
+
+![b19SaberRankings](https://user-images.githubusercontent.com/22247220/64912296-1d67fb80-d6fb-11e9-8238-b953c8b87eb6.png)
+
+
+## Application of playerElo
+
+The playerElo system is able to reveal characteristics of the game and performance current metrics miss. For example, the context-dependent nature and run value calculations of playerElo appropriately credits a reliever who gets three outs without allowing a run after the previous pitcher loaded the bases, and similarly splits the credit of those runs being allowed between a pitcher who loaded the bases, and a reliever who failed to get the necessary outs to end the inning. Additionally,playerElo does not assign extra value to players who simply come up to the plate in high-powered offenses who often come up to the plate with runners on, nor docks players who simply do not get the same opportunities as their peers to accumulate as many counting statistics such as RBIs by nature of playing for a bad team.
+
+The difference between the playerElo rankings when run context-dependent, treating at-bats differently depending on the runs-out state, and context-free, meaning it treats all at-bats with equal weights of importance, highlight the important of including context in player evaluation. The greatest negative differences of rankings among the two models are all of hitters on the best offenses in the league: Yuli Gurriel, Justin Turner, and J.D. Martinez. The playerElo system accurately captures the favorable situations these hitters consistently bat in, and appropriately does not allow this to overinflate their value. Conversely, Alex Gordon of the atrocious Royals offense, rises significantly from, as does Renato Nunez from the Orioles.
 
 But most importantly, the fundamental aspect of the playerElo system is that the quality of competition is factored into player analysis. Once again, consider the comparison between Freeman and Santana, who have nearly identical statistics but clearly face different levels of pitching competition.
 
-| PA | wOBA | xwOBA | wRC+ | playerElo |
-| :-: | :-: | :-: | :-: | :-: |
-| Freeman, 1B | 533 | 0.400 | 0.398 | 146 | 1304 |
-| Santana, 1B | 503 | 0.390 | 0.366 | 142 | 1153 |
+| Player | PA | wOBA | xwOBA | wRC+ | playerElo |
+| :-: | :-: | :-: | :-: | :-: | :-: |
+| Freeman, 1B | 643 | 0.398 | 0.396 | 144 | 1329 |
+| Santana, 1B | 624 | 0.389 | 0.371 | 141 | 1146 |
 
 *Data from FanGraphs, Baseball Savant.*
 
-There is now a distinguishing factor between the two players, reflected by Freeman’s 2nd best overall playerElo among batters versus Santana’s 22nd overall playerElo.
+There is now a distinguishing factor between the two players, reflected by Freeman’s 5th best overall playerElo among batters versus Santana’s 55th overall playerElo.
+
 
 ## Future Work
 * There are a few areas of playerElo I would like to address in the future. After speaking with Tom Tango (@tangotiger on Twitter), I believe adding a decay rate to the Elo metric could be beneficial. I would replace individual playerElo adjustments per PA with an aging curve and diminishing weights on historic performance, fully utilizing the information of a player's full career. 
 * With more data and information regarding the relationship of playerElo to wins and losses, I can convert the playerElo Team Ranks into projected Win-Loss records, and potentially probabilities for postseason berths. 
 * A comment on my FanGraphs article introduced me to a Baseball Prospectus statistic Deserved Runs Created Plus (DRC+), which attempts to represent each hitter's expected contribution. I'd like to dive into the methodology behind DRC+, and perhaps revise and improve my own quality of competition modeling scheme. 
+
+
+## Technical Appendix
