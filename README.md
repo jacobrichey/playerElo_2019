@@ -135,6 +135,6 @@ The playerElo adjustments are found with formulas reflective of the relationship
 
 `Pitcher Elo Change = (965.754 - (4762.089 * RV_Diff) - pitcherElo) / 502`
 
-`Pitcher Elo Change = (965.754 - (4762.089 * 1.2523) - 1084) / 502 = -12.12`
+`Morton Elo Change = (965.754 - (4762.089 * 1.2523) - 1084) / 502 = -12.12`
 
 If there was an error on the play, these adjustments would be disregarded unless the elo change is still negative for the batter or positive for the pitcher. 
