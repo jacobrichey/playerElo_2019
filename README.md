@@ -137,4 +137,4 @@ The playerElo adjustments are found with formulas reflective of the relationship
 
 `Morton Elo Change = (965.754 - (4762.089 * 1.2523) - 1084) / 502 = -12.12`
 
-If there was an error on the play, these adjustments would be disregarded unless the elo change is still negative for the batter or positive for the pitcher. 
+If there was an error on the play, these adjustments would be disregarded unless the elo change is still negative for the batter or positive for the pitcher. Otherwise, the playerElo of Bellinger and Morton is updated, and the model will repeat these steps with the next plate appearance.
