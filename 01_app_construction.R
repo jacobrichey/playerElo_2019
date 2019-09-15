@@ -196,11 +196,11 @@ for (row in 1:nrow(RE19)) {
     p19Elo$avgEloFaced[which(p19Elo$player_id == pitcherID)] + batterElo
 
   # Add playerElo for current PA or BFP to progression list.
-  all_playerElo[[row*2 - 1]] <- 
+  all_playerElo[[row * 2 - 1]] <- 
     list(playerID = batterID,
          PA = b19Elo$PA.x[which(b19Elo$player_id == batterID)], 
          playerElo = batterElo)
-  all_playerElo[[row*2]] <- 
+  all_playerElo[[row * 2]] <- 
     list(playerID = pitcherID,
          PA = p19Elo$BFP.x[which(p19Elo$player_id == pitcherID)],
          playerElo = pitcherElo)
