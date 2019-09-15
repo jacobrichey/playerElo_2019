@@ -155,7 +155,7 @@ b19Elo <- data.frame(player_id = unique(RE19$Batter_MLB_ID),
   mutate(currentElo = ifelse(is.na(currentElo), 
                              1000, 
                              ((currentElo - 1000) * 0.85) + 1000),
-         preseasonElo = currentElo, 
+         preseasonElo = currentElo, avgEloFaced = 0,
          PA.x = 0) %>%
   left_join(b19, by = "player_id") %>%
   select(player_id, preseasonElo, currentElo, first_name, 
@@ -167,13 +167,13 @@ p19Elo <- data.frame(player_id = unique(RE19$Pitcher_MLB_ID),
   mutate(currentElo = ifelse(is.na(currentElo), 
                              1000, 
                              ((currentElo - 1000) * 0.85) + 1000),
-         preseasonElo = currentElo, 
+         preseasonElo = currentElo, avgEloFaced = 0,
          BFP.x = 0) %>%
   left_join(p19, by = "player_id") %>%
   select(player_id, preseasonElo, currentElo, first_name, 
          last_name, Pitching_Team, everything(), -Date)
 
-# Create data.table to track playerElo progression by PA or BFP.
+# Create list to track playerElo progression by PA or BFP.
 all_playerElo <- list()
 
 # Compute playerElo.
@@ -189,8 +189,13 @@ for (row in 1:nrow(RE19)) {
     b19Elo$PA.x[which(b19Elo$player_id == batterID)] + 1
   p19Elo$BFP.x[which(p19Elo$player_id == pitcherID)] <-
     p19Elo$BFP.x[which(p19Elo$player_id == pitcherID)] + 1
+  
+  b19Elo$avgEloFaced[which(b19Elo$player_id == batterID)] <-
+    b19Elo$avgEloFaced[which(b19Elo$player_id == batterID)] + pitcherElo
+  p19Elo$avgEloFaced[which(p19Elo$player_id == pitcherID)] <-
+    p19Elo$avgEloFaced[which(p19Elo$player_id == pitcherID)] + batterElo
 
-  # Add playerElo for current PA or BFP to progression data.table.
+  # Add playerElo for current PA or BFP to progression list.
   all_playerElo[[row*2 - 1]] <- 
     list(playerID = batterID,
          PA = b19Elo$PA.x[which(b19Elo$player_id == batterID)], 
@@ -223,8 +228,8 @@ for (row in 1:nrow(RE19)) {
   
   # Compute Elo change, with formulas are reflective of relationship 
   # between wOBA or FIP and Run Value per PA or BFP.
-  bElo_delta <- ((921.675 + (6046.370 * rv_diff) - batterElo) / 502)
-  pElo_delta <- ((965.754 - (4762.089 * rv_diff) - pitcherElo) / 502)
+  bElo_delta <- (921.675 + (6046.370 * rv_diff) - batterElo) / 502
+  pElo_delta <- (965.754 - (4762.089 * rv_diff) - pitcherElo) / 502
   
   # Account for errors only if it still helps pitcher or hurts batter, 
   # otherwise disregard, and update playerElo of batter and pitcher.
@@ -245,6 +250,9 @@ for (row in 1:nrow(RE19)) {
   }
 }
 
+# Convert list to df.
+all_playerElo <- do.call("bind_rows", all_playerElo)
+
 # Load positions of players (source: RotoWire).
 batter_positions <- read_csv("data/mlb-player-stats-Batters.csv") %>%
   separate(Player, into = c("first_name", "last_name"), 
@@ -255,7 +263,7 @@ batter_positions <- read_csv("data/mlb-player-stats-Batters.csv") %>%
 pitcher_positions <- read_csv("data/mlb-player-stats-P.csv") %>%
   separate(Player, into = c("first_name", "last_name"), 
            sep = " ", extra = "merge") %>%
-  mutate(Pos = ifelse(G - GS < 5 | IP > 65, "SP", "RP")) %>%
+  mutate(Pos = ifelse(G - GS < 10, "SP", "RP")) %>%
   select(first_name, last_name, Pos, ERA, WHIP, IP)
 
 # Load exit velo stats on players (source: Baseball Savant).
@@ -271,7 +279,6 @@ pitcher_ev <- read_csv("data/exit_velocity-3.csv",
   select(player_id, EV, "HH%")
 
 # Create new df to describe trends of players, using playerElo progression dt.
-all_playerElo <- do.call("bind_rows", all_playerElo)
 all_playerElo_mod <- all_playerElo %>%
   mutate(PA = PA + 50) %>%
   arrange(desc(playerElo)) %>%
@@ -281,10 +288,10 @@ all_playerElo_mod <- all_playerElo %>%
 # Add positions and velo stats to playerElo df, clean data.
 b19Elo_mod <- b19Elo %>%
   arrange(desc(currentElo)) %>%
-  mutate(Rank = seq.int(nrow(b19Elo))) %>%
+  mutate(Rank = seq.int(nrow(b19Elo)),
+         avgEloFaced = round(avgEloFaced / PA.x, 1)) %>%
   left_join(batter_positions, by = c("first_name", "last_name")) %>%
   left_join(batter_ev, by = "player_id") %>%
-  mutate(currentElo = round(currentElo)) %>%
   rename(First_Name = first_name,
          Last_Name = last_name,
          Team = Batting_Team,
@@ -305,23 +312,23 @@ b19Elo_mod$Position[which(b19Elo_mod$player_id == 628356)] <- "3B"
 b19Elo_mod <- b19Elo_mod %>%
   distinct(player_id, .keep_all = TRUE) %>%
   drop_na(EV) %>%
-  mutate(Position = replace_na(Position, "P"),
-         playerElo = playerElo + 1000 - mean(playerElo)) %>%
+  mutate(Position = replace_na(Position, "P")) %>%
   left_join(all_playerElo_mod, by = c("player_id" = "playerID", "PA")) %>%
   mutate(Trend = replace_na(Trend, 1000))
 # Select columns for display in Shiny App.
 b19Elo_disp <- b19Elo_mod %>%
   unite("Name", First_Name, Last_Name, sep = " ") %>%
-  mutate(Trend = round(playerElo - Trend)) %>%
+  mutate(Trend = round(playerElo - Trend),
+         playerElo = round(playerElo + 1000 - mean(playerElo))) %>%
   select(Name, Team, Position, PA, EV, "HH%", wOBA, xwOBA, Trend, playerElo)
 
 # Run same steps for pitchers.
 p19Elo_mod <- p19Elo %>%
   arrange(desc(currentElo)) %>%
-  mutate(Rank = seq.int(nrow(p19Elo))) %>%
+  mutate(Rank = seq.int(nrow(p19Elo)),
+         avgEloFaced = round(avgEloFaced / BFP.x, 1)) %>%
   left_join(pitcher_positions, by = c("first_name", "last_name")) %>%
   left_join(pitcher_ev, by = "player_id") %>%
-  mutate(currentElo = round(currentElo)) %>%
   rename(First_Name = first_name,
          Last_Name = last_name,
          Team = Pitching_Team,
@@ -340,11 +347,11 @@ p19Elo_mod <- p19Elo_mod %>%
   distinct(player_id, .keep_all = TRUE) %>%
   drop_na(EV, IP) %>%
   left_join(all_playerElo_mod, by = c("player_id" = "playerID", "PA")) %>%
-  mutate(Trend = replace_na(Trend, 1000),
-         playerElo = playerElo + 1000 - mean(playerElo))
+  mutate(Trend = replace_na(Trend, 1000))
 p19Elo_disp <- p19Elo_mod %>%
   unite("Name", First_Name, Last_Name, sep = " ") %>%
-  mutate(Trend = round(playerElo - Trend)) %>%
+  mutate(Trend = round(playerElo - Trend),
+         playerElo = round(playerElo + 1000 - mean(playerElo))) %>%
   select(Name, Team, Position, PA, EV, "HH%", wOBA, xwOBA, Trend, playerElo)
 
 # Load team records (source: Baseball Reference), compute pythWPct.

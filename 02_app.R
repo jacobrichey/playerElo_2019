@@ -80,7 +80,7 @@ ui <- fluidPage(
                          selected = NULL),
              tags$em("Please allow a few moments for the graph to update. 
                      The bold horizontal line denotes the league average 
-                     playerElo (roughly 980)."),
+                     playerElo (roughly 1000)."),
              plotOutput("graph", height = 600))
   )
 )
@@ -138,7 +138,7 @@ server <- function(input, output) {
       geom_path(data = highlight_data, 
                 aes(PA, playerElo, group = playerID, color = Name),
                 size = 1.3) +
-      geom_hline(yintercept = 980, size = 1.1) +
+      geom_hline(yintercept = 1000, size = 1.1) +
       geom_label(data = last_point, 
                  aes(PA, playerElo, group = playerID, color = Name, 
                      label = paste(Name, round(playerElo), sep = ": ")), 
