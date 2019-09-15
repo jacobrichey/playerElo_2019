@@ -121,7 +121,7 @@ Bellinger is batting at home, so a standard home field advantage adjustment will
 
 `xRV_Bellinger = 0.1659 + 0.006605 = 0.1725`
 
-Now, let's assume Bellinger hits a double scoring both baserunners. The expected run value of the play will be compared to the actual run value of the play, with a park factor included. Park factors are by comparing the average run value of visting teams at every stadium to the average run value at all stadiums.
+Now, let's assume Bellinger hits a double scoring both baserunners. The expected run value of the play will be compared to the actual run value of the play, with a park factor included. Park factors are computed by comparing the average run value of visting teams at each stadium to the average run value at all stadiums.
 
 `RV_Diff = Play RV - ((xRV_Batter + xRV_Pitcher) / 2) - Park Factor`
 
