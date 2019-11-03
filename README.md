@@ -98,9 +98,17 @@ There is now a distinguishing factor between the two players, reflected by Freem
 
 
 ## Future Work
-* There are a few areas of playerElo I would like to address in the future. After speaking with Tom Tango (@tangotiger on Twitter), I believe adding a decay rate to the Elo metric could be beneficial. I would replace individual playerElo adjustments per PA with an aging curve and diminishing weights on historic performance, fully utilizing the information of a player's full career. 
-* With more data and information regarding the relationship of playerElo to wins and losses, I can convert the playerElo Team Ranks into projected Win-Loss records, and potentially probabilities for postseason berths. 
-* A comment on my FanGraphs article introduced me to a Baseball Prospectus statistic Deserved Runs Created Plus (DRC+), which attempts to represent each hitter's expected contribution. I'd like to dive into the methodology behind DRC+, and perhaps revise and improve my own quality of competition modeling scheme. 
+
+Since publication on FanGraphs and submission to the Carnegie Mellon University Sports Analytics Conference, I've had time to ruminate about improvements I would like to make to the model. Here are a few ideas I plan to implement this offseason.
+
+* Use future value / prospect rank to better estimate the starting Elo ranking for a rookie
+* Implement time decay rate and aging curve (credit to Tom Tango for suggesting this idea) 
+* Improve park factors to be more accurate
+* Create running Elo projections for games and win-loss records, with possible betting applications
+* Update team rankings to reflect injuries
+* Quantify uncertainty, i.e. ceilings, floors, Elo variance across a season (cred: Sameer Deshpande)
+* Quality of contact vs. outcomes
+* Consider metholodogy of RE24 and create a context-neutral ranking system (cred: Salem Marrero)
 
 
 ## Technical Appendix
