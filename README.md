@@ -1,4 +1,4 @@
-# playerElo
+# playerElo 2019
 
 Open the playerElo App here: https://jrichey.shinyapps.io/playerelo/
 
